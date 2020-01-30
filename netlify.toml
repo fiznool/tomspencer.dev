@@ -1,0 +1,5 @@
+[[redirects]]
+  from = "/*"
+  to = "https://www.fiznool.com/:splat"
+  status = 200
+  force = true
