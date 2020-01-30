@@ -40,7 +40,7 @@ github = "fiznool"
 linkedin = "fiznool"
 twitter = "fiznool"
 stackoverflow = "1171775/tom-spencer"
-email = "tom.spencer@studiozeffa.com"
+email = "hello@tomspencer.dev"
 
 ## Extras
 [params.extra]
@@ -62,7 +62,7 @@ poweredby = true
     name = "Hire Me"
     identifier = "hire-me"
     weight = 300
-    url = "mailto:tom.spencer@studiozeffa.com"
+    url = "mailto:hello@tomspencer.dev"
 
 [permalinks]
     blog = "/blog/:year/:month/:day/:slug/"

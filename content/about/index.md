@@ -16,7 +16,7 @@ For the last 12 years I’ve been architecting and developing single-page web ap
 
 Read on to find out more about the services I offer, my portfolio and previous experience. You can also check out my [GitHub profile](https://github.com) and visit my [LinkedIn page](https://uk.linkedin.com/in/fiznool).
 
-If you are interesting in hiring me to work on a web or mobile application, or would like to learn more about the training courses I run, why not [get in touch](mailto:tom.spencer@studiozeffa.com)?
+If you are interesting in hiring me to work on a web or mobile application, or would like to learn more about the training courses I run, why not [get in touch](mailto:hello@tomspencer.dev)?
 
 * * *
 
@@ -252,4 +252,4 @@ Technical Knowledge
 Where Next?
 -----------
 
-Head over to my [blog](blog) for semi-regular updates on what I'm working on. Or if you'd like to get in touch, you can [send me an email](mailto:tom.spencer@studiozeffa.com).
+Head over to my [blog](blog) for semi-regular updates on what I'm working on. Or if you'd like to get in touch, you can [send me an email](mailto:hello@tomspencer.dev).

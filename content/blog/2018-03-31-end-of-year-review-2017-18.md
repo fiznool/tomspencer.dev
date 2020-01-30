@@ -88,4 +88,4 @@ I'd also like to continue working with Node.js. I find it a very good choice for
 
 But most importantly, I hope to continue working with friendly, talented and down-to-earth people, as I have been lucky enough to work with this year. Long may that continue!
 
-_Interested in hiring me for your next project or training course? Please [get in touch](mailto:tom.spencer@studiozeffa.com) and I'd be happy to discuss._
+_Interested in hiring me for your next project or training course? Please [get in touch](mailto:hello@tomspencer.dev) and I'd be happy to discuss._

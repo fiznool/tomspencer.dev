@@ -94,4 +94,4 @@ I'd be surprised if I didn't continue to work with React in some capacity, as I'
 
 Once again this past year has seen me working with exceptionally talented, driven and fundamentally nice people. I hope this continues into the coming year and beyond.
 
-_Interested in hiring me for your next project or training course? Please [get in touch](mailto:tom.spencer@studiozeffa.com) and I'd be happy to discuss._
+_Interested in hiring me for your next project or training course? Please [get in touch](mailto:hello@tomspencer.dev) and I'd be happy to discuss._
