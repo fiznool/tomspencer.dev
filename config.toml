@@ -1,0 +1,71 @@
+## Basic Configuration
+
+baseurl = "https://www.tomspencer.dev"
+builddrafts = false
+canonifyurls = false
+languageCode = "en-US"
+
+contentdir = "content"
+layoutdir = "layouts"
+publishdir = "public"
+
+author = "Tom Spencer"
+title = "Tom Spencer"
+
+## Hugo Built-in Features
+disqusShortname = "fiznool-blog"
+googleAnalytics = "UA-35508451-1"
+enableRobotsTXT = true
+
+# Syntax highlighting
+pygmentsCodeFences = true   # Enable triple backtick 'code fences' markdown
+pygmentsUseClasses = false  # Add inline styles, no need to compile extra CSS
+pygmentsStyle = "friendly"  # Change the highlighting colour scheme
+
+## Site Settings
+[params]
+author = "Tom Spencer"
+intro = "JavaScript Consultant from Bristol, UK."
+authorimage = "headshot.jpg"
+dateformat = "Jan 2, 2006"
+
+## Site Meta Settings
+[params.meta]
+description = "Personal website and portfolio of Tom Spencer, a Bristol-based JavaScript Consultant."
+keywords = "software,developer,web,mobile,apps,portfolio,javascript,react,node,bristol"
+
+## Social Accounts
+[params.social]
+github = "fiznool"
+linkedin = "fiznool"
+twitter = "fiznool"
+stackoverflow = "1171775/tom-spencer"
+email = "tom.spencer@studiozeffa.com"
+
+## Extras
+[params.extra]
+copyright = "© 2019. Tom Spencer. [Some Rights Reserved](http://creativecommons.org/licenses/by/3.0/)."
+poweredby = true
+
+## Main Menu
+[[menu.main]]
+    name = "About"
+    identifier = "about"
+    weight = 100
+    url = "/about/"
+[[menu.main]]
+    name = "Blog"
+    weight = 200
+    identifier = "blog"
+    url = "/blog/"
+[[menu.main]]
+    name = "Hire Me"
+    identifier = "hire-me"
+    weight = 300
+    url = "mailto:tom.spencer@studiozeffa.com"
+
+[permalinks]
+    blog = "/blog/:year/:month/:day/:slug/"
+
+[blackfriday]
+    fractions = false

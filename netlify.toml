@@ -1,5 +1,7 @@
-[[redirects]]
-  from = "/*"
-  to = "https://www.fiznool.com/:splat"
-  status = 301
-  force = false
+[build]
+  publish = "public"
+  command = "hugo --gc --minify"
+
+[context.production.environment]
+  HUGO_VERSION = "0.63.2"
+  HUGO_ENV = "production"
