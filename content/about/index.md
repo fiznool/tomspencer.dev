@@ -5,7 +5,7 @@ date = "2018-03-21T16:06:01Z"
 draft = false
 slug = ""
 tags = ["about"]
-title = "About | Tom Spencer"
+title = "About Me"
 
 showpagemeta = false
 +++

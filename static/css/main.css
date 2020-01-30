@@ -337,3 +337,15 @@ pre > code {
     word-wrap: initial;
     word-break: initial;
 }
+
+@media print {
+    html {
+        font-size: 50%;
+    }
+    a, a:hover, a:visited, a:link {
+        text-decoration: none;
+    }
+    a[href]:after {
+        content: "";
+    }
+}
