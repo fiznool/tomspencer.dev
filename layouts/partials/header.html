@@ -10,8 +10,6 @@
 <meta name="description" content="{{ if .Params.description }}{{ .Params.description }}{{ else }}{{ .Site.Params.meta.description }}{{ end }}">
 <meta name="keywords" content="{{ .Site.Params.meta.keywords }}">
 
-<base href="{{ .Site.BaseURL }}">
-
 <title>{{ if .Title }}{{ .Title }}{{ else }}{{ .Site.Title }}{{ end }}</title>
 
 {{ .Hugo.Generator }}
