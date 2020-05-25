@@ -336,6 +336,12 @@ node dist/app.js
 
 You should see the message `Hello, World` printed once again to your console.
 
+## A note about `@babel/node`
+
+An alternative to the above is to use another package `@babel/node` to run the src files. This combines the process of building and running the TypeScript files, and removes the need for the `dist/` folder.
+
+We haven't explored this option, since `@babel/node` is [not recommended for production use](https://babeljs.io/docs/en/babel-node#not-meant-for-production-use). We strive to mirror the production environment wherever possible during development to reduce the likelihood of 'production-only' issues, and so we prefer to use the separate compile-run stages as demonstrated above.
+
 ---
 
 ## Summary
@@ -390,6 +396,14 @@ npm install -D typescript @types/node @babel/core @babel/cli @babel/preset-types
 ```
 
 Now, running the command `npm run compile` will compile any TypeScript-authored files in the `src/` folder to `dist/`. These files can then be run using `node dist/<file>.js`.
+
+---
+
+## Further Reading
+
+- [TypeScript handbook](https://www.typescriptlang.org/docs/handbook/basic-types.html)
+- [Introduction to Babel](https://babeljs.io/docs/en/index.html)
+- [Example Babel Node server](https://github.com/babel/example-node-server)
 
 ---
 
