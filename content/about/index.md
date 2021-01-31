@@ -42,7 +42,7 @@ Here are a sample of kind words from past and current clients: more testimonials
 Portfolio
 ---------
 
-### [Confinus](https://confinus.com)
+### [Confinus](https://www.haute-grub.com/)
 
 Confinus is a web-based marketplace for vendors, distributors and buyers in the food industry.
 
@@ -50,7 +50,7 @@ Confinus is a web-based marketplace for vendors, distributors and buyers in the 
 - The initial MVP focusses on the meat and seafood sectors, connecting large distributors with local vendors such as restaurants, hotels and delicatessens.
 - I was brought in to re-architect the front-end of the site, which was initially built using a custom framework.
 - Since the backend is built with Rails, Stimulus was a natural choice, and I spent the first couple of months rebuilding existing functionality, using TypeScript and SASS alongside the Stimulus core.
-- The project is ongoing, and due for an initial release later in 2020.
+- Project was released in 2020, alongside a consumer-facing site [Haute Grub](https://www.haute-grub.com/).
 
 ### [Postsaver](https://itunes.apple.com/gb/app/postsaver/id1420447151?mt=8)
 
