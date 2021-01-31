@@ -44,7 +44,7 @@ email = "hello@tomspencer.dev"
 
 ## Extras
 [params.extra]
-copyright = "© 2020. Tom Spencer. [Some Rights Reserved](http://creativecommons.org/licenses/by/3.0/)."
+copyright = "© 2021. Tom Spencer. [Some Rights Reserved](http://creativecommons.org/licenses/by/3.0/)."
 poweredby = true
 
 ## Main Menu
