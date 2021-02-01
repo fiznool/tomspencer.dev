@@ -15,7 +15,6 @@ a:hover,
 a:visited,
 a:link
 {
-    text-decoration: underline;
     color: #943e00;
 }
 body
@@ -51,6 +50,10 @@ figcaption {
 }
 hr {
     border-top: 1px solid #ddd;
+}
+.navbar-brand {
+    font-size: 22px;
+    line-height: 26px;
 }
 .author
 {
@@ -95,6 +98,9 @@ div.content
     border: 2px solid #eee;
     padding: 8px;
     max-width: 100%;
+}
+.content a {
+    text-decoration: underline;
 }
 .copyright
 {
@@ -203,7 +209,7 @@ h3.intro
 }
 a.list-entry-link
 {
-    color: #526d7a;
+    color: #943e00;
     text-decoration: none;
     padding: 0;
 }
@@ -234,7 +240,7 @@ a.menu-item
     font-weight: 200;
     margin-bottom: 0;
 
-    color: #bbb;
+    color: #666;
 }
 a.meta
 {
@@ -246,7 +252,7 @@ h6.meta
     font-size: 12px;
     font-weight: 200;
 
-    color: #bbb;
+    color: #666;
 }
 .powered
 {
@@ -297,6 +303,14 @@ header.title
 }
 .highlight-copy-btn:hover {
     background-color: #666;
+}
+
+.navbar {
+    margin-bottom: 0;
+}
+
+.navbar a.menu-item {
+    font-size: 20px;
 }
 
 @media (min-width: 420px) {
