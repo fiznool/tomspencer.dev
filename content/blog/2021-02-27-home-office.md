@@ -30,4 +30,30 @@ I have serious M1 envy, but two things are holding me back:
 
 ### Displays
 
-A [dual desk mount arm](https://www.amazon.co.uk/dp/B01N4L6MLM) holds two [Samsung U24E850 4k monitors](https://www.amazon.co.uk/dp/B00WUACVIC). They are 24" in size, which is unusual for 4k displays: most are at least 28". I specifically wanted two smaller screens to preserve 'retina' sharpness: these displays offer 183ppi (pixels per inch), which is not too far away from the MBP's built-in screen (which has 220ppi). Since I look at code all day, crispness of text is of paramount importance to me.
+A [dual desk mount arm](https://www.amazon.co.uk/dp/B01N4L6MLM) holds two [Samsung U24E850 4k monitors](https://www.amazon.co.uk/dp/B00WUACVIC). They are 24" in size, which is unusual for 4k displays: most are at least 28". I specifically wanted two smaller screens to preserve 'retina' sharpness: these displays offer a screen density of 183ppi (pixels per inch), which is not too far away from the MBP's built-in screen (which has 220ppi). Since I look at code all day, crispness of text is of paramount importance to me.
+
+For reference, here is the ppi for some other common 4k screen sizes:
+
+- 28": 157ppi
+- 32": 137ppi
+
+Also worth noting is a 5k 32" screen has the same ppi as a 4k 24" one. Sadly, they don't seem to exist!
+
+### Dock
+
+2016 saw a big Macbook Pro design refresh. Although the touch bar took much of the headlines, another big change was the introduction of USB-C ports for all external connectivity. For many, this means [dongle life / hell](https://mashable.com/2016/10/28/macbook-pro-dongle-hell) but a nicer outcome is the option to connect the laptop to displays, input devices and power via one cable.
+
+Since I was looking to connect two external displays via DisplayPort (to achieve 60Hz refresh rate across the board), options were limited. After a false start with a [Caldigit dock](https://www.amazon.co.uk/dp/B07VJMKYDF) (which didn't seem to recognise displays when the laptop woke from sleep), I settled on a [Startech Thunderbolt 3 dock](https://www.startech.com/en-gb/cards-adapters/tb3dk2dhvue) which has been pretty much flawless. It's really nice to be able to dock and undock the laptop so easily, something that was a bit of a pain with the older MBP design.
+
+You will notice from the picture above that I like to use the laptop display as a third screen, this ruled out the (otherwise excellent) [Henge Dock](https://www.brydge.com/products/macbook-vertical-dock).
+
+### Headphones
+
+The essential companion to a coder's day. Even though I work from home, years of office work have conditioned me to wearing headphones while I work - nowadays they are useful at drowning out the household noise, rather than open-plan office chatter.
+
+After faffing around with cheaper headphones, I invested in the [Bose QuietComfort 35ii](https://www.amazon.co.uk/dp/B0756CYWWD) cans. The old adage, _you get what you pay for_ really applies here. The only complaint is I find them a little uncomfortable to use all day, compared to the [Jabra Move](https://www.amazon.co.uk/dp/B00NHSFWG4) headphones I used previously. The sound quality more than makes up for it, though!
+
+### Other peripherals
+
+- A [Logitech C920 USB camera](https://www.amazon.co.uk/dp/B006A2Q81M), which is much better than the built-in camera on the MacBook Pro. Surely Apple must address this in a future update, especially with the rise of video calling?
+- A Magic Mouse 2 and USB wired Apple keyboard. I couldn't justify the cost of a Magic keyboard, when I have a couple of the older USB ones lying around at home.
