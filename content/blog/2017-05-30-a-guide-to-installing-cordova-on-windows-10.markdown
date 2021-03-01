@@ -9,11 +9,9 @@ categories = [
 description = "This is the second part of a guide to installing the Cordova framework, and deals with installation on Windows 10."
 +++
 
+_Please note that this guide was last updated on 30th May 2017. I haven't worked with Cordova since 2018 and so the steps below are likely out of date and may not work. I'm keeping the guide here as a historical reference. If you are interested in providing updated instructions, please reach out to me and I will look to update this post accordingly._
+
 This is the second part of a guide to installing the [Cordova](https://cordova.apache.org/) framework, and deals with installation on Windows 10. If you own a Mac, see [part one]({{< relref "2017-05-29-a-guide-to-installing-cordova-on-your-mac.markdown" >}}) instead.
-
-<!-- more -->
-
-_This guide was last updated on 30th May 2017. If any of the steps below are out of date, please let me know via the comments section below._
 
 ## Prerequisites
 

@@ -9,13 +9,11 @@ categories = [
 description = "Cordova is a popular framework for building hybrid mobile applications. This post provides a complete guide on how to install it on a Mac running OS X or macOS, so you can deploy a Cordova-based app to your iOS or Android device."
 +++
 
+_Please note that this guide was last updated on 29th May 2017. I haven't worked with Cordova since 2018 and so the steps below are likely out of date and may not work. I'm keeping the guide here as a historical reference. If you are interested in providing updated instructions, please reach out to me and I will look to update this post accordingly._
+
 [Cordova](https://cordova.apache.org/) is a popular framework for building hybrid mobile applications. This post provides a complete guide on how to install it on a Mac running OS X or macOS, so you can deploy a Cordova-based app to your iOS or Android device.
 
 Since Cordova is the technology that underpins other frameworks such as [Ionic](https://ionicframework.com/), this post also acts as an installation guide for these projects.
-
-<!-- more -->
-
-_This guide was last updated on 29th May 2017. If any of the steps below are out of date, please let me know via the comments section below._
 
 ## Prerequisites
 
