@@ -53,7 +53,44 @@ The essential companion to a coder's day. Even though I work from home, years of
 
 After faffing around with cheaper headphones, I invested in the [Bose QuietComfort 35ii](https://www.amazon.co.uk/dp/B0756CYWWD) cans. The old adage, _you get what you pay for_ really applies here. The only complaint is I find them a little uncomfortable to use all day, compared to the [Jabra Move](https://www.amazon.co.uk/dp/B00NHSFWG4) headphones I used previously. The sound quality more than makes up for it, though!
 
-### Other peripherals
+### Desk
 
-- A [Logitech C920 USB camera](https://www.amazon.co.uk/dp/B006A2Q81M), which is much better than the built-in camera on the MacBook Pro. Surely Apple must address this in a future update, especially with the rise of video calling?
-- A Magic Mouse 2 and USB wired Apple keyboard. I couldn't justify the cost of a Magic keyboard, when I have a couple of the older USB ones lying around at home.
+Everything (except me) sits on an [IKEA BEKANT](https://www.ikea.com/gb/en/p/bekant-desk-sit-stand-white-stained-oak-veneer-white-s39282249/) sit/stand desk. Purchased in 2015, this is the third incarnation after the motors failed on the previous two. Luckily the desk has a 10 year warranty, but it's a real pain to swap out your desk, and so on reliability alone I couldn’t recommend it.
+
+One of the best parts of the desk is a customised version of the controller, available on THIS SITE. This gives the desk preset memory functionality - pressing the up button a specific number of times will automatically move the desk to the pre-programmed height. It’s a small thing that makes a huge difference, and we’ll worth the $50. As a nice bonus, the motors haven’t failed since I installed the new controller!
+
+### Chair
+
+My chair is the bargain of the whole setup. It's a [Steelcase Leap](https://www.steelcase.com/products/office-chairs/leap/) v1 which someone was selling for £50. These retail at £700+ so it’s fair to say I was very happy at picking it up.
+
+The Leap replaced my old [IKEA MARKUS](https://www.ikea.com/gb/en/p/markus-office-chair-glose-black-20103101/) chair. Similar to the Bose headphones, you get what you pay for - I can sit for hours in the Steelcase without any back pain or numbness, unlike the MARKUS. I’m a firm believer of investing in anything that will improve long term health and for me, the chair is THE most important thing. If this one breaks, I wouldn’t hesitate to pay full price for a replacement, it’s that good.
+
+You might notice the cape adorning the back of the chair - this was a leaving gift from my old colleagues at Mubaloo 🙂
+
+### Miscellaneous
+
+- Sitting on top of the left hand display is a [Logitech C920 USB camera](https://www.amazon.co.uk/dp/B006A2Q81M), which is much better than the built-in camera on the MacBook Pro. Surely Apple must address this in a future update, especially with the rise of video calling?
+- I click with a [Magic Mouse 2](https://www.apple.com/uk/shop/product/MLA02Z/A/magic-mouse-2-silver) and type with a (now discontinued) USB wired Apple keyboard. I couldn't justify the cost of a [Magic keyboard](https://www.apple.com/uk/shop/product/MQ052B/A/magic-keyboard-with-numeric-keypad-british-english-silver), when I have a couple of the older USB ones lying around at home.
+- The pencil pot is an old tin with the words ‘Clotted Cream fudge and toffee’. When I was 8, my parents bought me my first computer, an [A500+](https://en.wikipedia.org/wiki/Amiga_500_Plus). I soon found out it could speak any words that you typed in, and these were its first words.
+- The picture in the wall is of [Kaikoura](https://www.kaikoura.co.nz/), on the South Island in New Zealand. It’s one of the best places in the world to swim with dolphins!
+
+## Software
+
+I'm a web developer, primarily working with JavaScript and TypeScript. Here are some of the tools I use every day.
+
+- [Visual Studio Code](https://code.visualstudio.com/) - simply the nicest authoring experience I’ve had when working with TypeScript, although I find it chugs a little on larger projects. Sublime Text 3 is much faster, but lacks the bells and whistles.
+- [Docker](https://www.docker.com/) - these days I try to isolate all of my development environments into Docker containers. This ensures that updates and changes to the main system don’t affect individual projects. VS Code has first class support for launching and attaching to these containers.
+- [iTerm 2](https://iterm2.com/) - I use the terminal for all git commands, backing off to VS Code for merge/rebase conflicts.
+- Firefox - for years, there was an issue with Firefox on Mac when rendering to so-called 'HiDPI' displays, which caused excessive CPU and battery usage. This seems to have been resolved, and now FF has become my go-to browser. I prefer Mozilla’s privacy-first approach to that of Chrome, and Safari still lags behind in many features (although it is getting better - maybe I should give it another try).
+- Chrome - I have relegated Chrome to be used for testing sites during development. Keeping your main browser separate from your development/testing browser has a number of benefits, and this approach has served me well.
+- [Tiny Player](https://www.catnapgames.com/tiny-player-for-mac/) - a lightweight music player, without all the cruft and bulk (looking at you, iTunes).
+- [Mailplane](https://mailplaneapp.com/) - a nice wrapper for the GMail web interface. Keeps all my mail in one window.
+- [Slack](https://slack.com/) - essential for real-time communication.
+- [Twist](https://twist.com) - better asynchronous communication. Threaded messages provoke thoughtful writing and measured replies, rather than the whack-a-mole Slack approach.
+- [Pixelmator Pro](https://www.pixelmator.com/pro/) - a fully featured graphics editor without the eye-watering Adobe price.
+
+## Summary
+
+Getting the right setup in your home office can drastically improve your productivity and general well-being. A little investment will set you in good stead for years of remote-working happiness.
+
+What is your home setup? Is there anything that you can't live without? Or anything you need to improve? Let me know in the comments below!
