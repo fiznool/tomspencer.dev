@@ -5,11 +5,13 @@ description = "Although 2020 was the year that remote working was forced upon ma
 draft = true
 +++
 
+<img src="/img/2021-02-27-home-office/home-office-desktop.jpeg" alt="Desktop with a 2018 Macbook Pro and two external monitors" />
+
 The COVID-19 pandemic transformed the workplace for many people during 2020, closing offices and forcing millions to work from home. The figures don't lie: in April 2020, [almost half of the workforce in the UK worked from home](https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/employmentandemployeetypes/bulletins/coronavirusandhomeworkingintheuk/april2020). To some, this was a blessing: no commute, better flexibility and fewer interruptions meant that productivity and happiness increased, despite the worries associated with the pandemic. Others were not so keen: citing a lack of work-life separation, isolation and more interruptions, especially since home working spaces are often shared with other members of the household. I particularly feel for those who have young children - with schools closed, the challenge of carrying out work duties alongside childcare is a very stressful experience.
 
 Personally, I have been enjoying the benefits of home working since 2014, although I am fortunate to have a separate room in which to call my 'office', and so it is easier to maintain a healthy work/life balance, and I can shut the door to drown out the noise from the rest of the household. In this article I'd like to share my home office setup.
 
-Without further ado:
+Here it is in full:
 
 <img src="/img/2021-02-27-home-office/home-office-full.jpeg" alt="A standing desk adorned with a 2018 Macbook Pro and two external monitors, flanked by a Steelcase Leap chair" />
 
@@ -67,10 +69,17 @@ The Leap replaced my old [IKEA MARKUS](https://www.ikea.com/gb/en/p/markus-offic
 
 You might notice the cape adorning the back of the chair - this was a leaving gift from my old colleagues at Mubaloo 🙂
 
-### Miscellaneous
+### Networking
+
+A few years ago my house was rewired, and we took the opportunity to lay cat6 cable throughout the house. As a result, the office (and most other rooms in the house) have a wired Ethernet connection to the main router, a [TP Link Archer VR600](https://www.tp-link.com/uk/home-networking/dsl-modem-router/archer-vr600/). For the wireless devices, three [Ubiquiti UAP-AC-LR access points](https://www.amazon.co.uk/dp/B016K5A06C) are dotted around the house, connected via PoE back to the network cabinet. Broadband is currently supplied by [Virgin Media](https://www.virginmedia.com/shop/broadband), but I hope to take advantage of 1Gbps speeds once ['fibre first'](https://www.openreach.com/fibre-broadband/fibre-first/) is fully available in my area.
+
+### Other bits and pieces
 
 - Sitting on top of the left hand display is a [Logitech C920 USB camera](https://www.amazon.co.uk/dp/B006A2Q81M), which is much better than the built-in camera on the MacBook Pro. Surely Apple must address this in a future update, especially with the rise of video calling?
 - I click with a [Magic Mouse 2](https://www.apple.com/uk/shop/product/MLA02Z/A/magic-mouse-2-silver) and type with a (now discontinued) USB wired Apple keyboard. I couldn't justify the cost of a [Magic keyboard](https://www.apple.com/uk/shop/product/MQ052B/A/magic-keyboard-with-numeric-keypad-british-english-silver), when I have a couple of the older USB ones lying around at home.
+- The lamp is an [IKEA SKURUP desk lamp](https://www.ikea.com/gb/en/p/skurup-work-wall-lamp-black-30326021/) which clamps onto the side of the desk.
+- The black thing at the back right is a Masterplug surge protected extension tower.
+- The desktop wallpaper images are from Bing. [A script](https://github.com/thejandroman/bing-wallpaper) runs in the background to automatically download the 'image of the day' from Bing. These are randomly presented by using the Mac _Desktop & Screensaver_ settings.
 - The pencil pot is an old tin with the words ‘Clotted Cream fudge and toffee’. When I was 8, my parents bought me my first computer, an [A500+](https://en.wikipedia.org/wiki/Amiga_500_Plus). I soon found out it could speak any words that you typed in, and these were its first words.
 - The picture in the wall is of [Kaikoura](https://www.kaikoura.co.nz/), on the South Island in New Zealand. It’s one of the best places in the world to swim with dolphins!
 
@@ -81,8 +90,8 @@ I'm a web developer, primarily working with JavaScript and TypeScript. Here are 
 - [Visual Studio Code](https://code.visualstudio.com/) - simply the nicest authoring experience I’ve had when working with TypeScript, although I find it chugs a little on larger projects. Sublime Text 3 is much faster, but lacks the bells and whistles.
 - [Docker](https://www.docker.com/) - these days I try to isolate all of my development environments into Docker containers. This ensures that updates and changes to the main system don’t affect individual projects. VS Code has first class support for launching and attaching to these containers.
 - [iTerm 2](https://iterm2.com/) - I use the terminal for all git commands, backing off to VS Code for merge/rebase conflicts.
-- Firefox - for years, there was an issue with Firefox on Mac when rendering to so-called 'HiDPI' displays, which caused excessive CPU and battery usage. This seems to have been resolved, and now FF has become my go-to browser. I prefer Mozilla’s privacy-first approach to that of Chrome, and Safari still lags behind in many features (although it is getting better - maybe I should give it another try).
-- Chrome - I have relegated Chrome to be used for testing sites during development. Keeping your main browser separate from your development/testing browser has a number of benefits, and this approach has served me well.
+- [Firefox](https://www.mozilla.org/firefox/) - for years, there was an issue with Firefox on Mac when rendering to so-called 'HiDPI' displays, which caused excessive CPU and battery usage. This seems to have been resolved, and now FF has become my go-to browser. I prefer Mozilla’s privacy-first approach to that of Chrome, and Safari still lags behind in many features (although it is getting better - maybe I should give it another try).
+- [Chrome](https://www.google.com/chrome/) - I have relegated Chrome to be used for testing sites during development. Keeping your main browser separate from your development/testing browser has a number of benefits, and this approach has served me well.
 - [Tiny Player](https://www.catnapgames.com/tiny-player-for-mac/) - a lightweight music player, without all the cruft and bulk (looking at you, iTunes).
 - [Mailplane](https://mailplaneapp.com/) - a nice wrapper for the GMail web interface. Keeps all my mail in one window.
 - [Slack](https://slack.com/) - essential for real-time communication.
