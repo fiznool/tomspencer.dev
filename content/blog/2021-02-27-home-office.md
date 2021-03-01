@@ -1,13 +1,12 @@
 +++
-title = "Home Office"
+title = "My Home Office"
 date = 2021-02-27T06:30:44Z
 description = "Although 2020 was the year that remote working was forced upon many, I've been enjoying the flexibility of home working for a number of years. Here's my current home office setup."
-draft = true
 +++
 
 <img src="/img/2021-02-27-home-office/home-office-desktop.jpeg" alt="Desktop with a 2018 Macbook Pro and two external monitors" />
 
-The COVID-19 pandemic transformed the workplace for many people during 2020, closing offices and forcing millions to work from home. The figures don't lie: in April 2020, [almost half of the workforce in the UK worked from home](https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/employmentandemployeetypes/bulletins/coronavirusandhomeworkingintheuk/april2020). To some, this was a blessing: no commute, better flexibility and fewer interruptions meant that productivity and happiness increased, despite the worries associated with the pandemic. Others were not so keen: citing a lack of work-life separation, isolation and more interruptions, especially since home working spaces are often shared with other members of the household. I particularly feel for those who have young children - with schools closed, the challenge of carrying out work duties alongside childcare is a very stressful experience.
+The COVID-19 pandemic transformed the workplace for many people during 2020, closing offices and forcing millions to work from home. The figures don't lie: in April 2020, [almost half of the workforce in the UK worked from home](https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/employmentandemployeetypes/bulletins/coronavirusandhomeworkingintheuk/april2020).
 
 Personally, I have been enjoying the benefits of home working since 2014, although I am fortunate to have a separate room in which to call my 'office', and so it is easier to maintain a healthy work/life balance, and I can shut the door to drown out the noise from the rest of the household. In this article I'd like to share my home office setup.
 
@@ -17,9 +16,18 @@ Here it is in full:
 
 ## Hardware
 
+### The lowdown
+
+- 2018 MacBook Pro, 15"
+- Pair of 24" Samsung 4k monitors
+- Startech Thunderbolt 3 dock
+- Bose QC35 headphones
+- IKEA BEKANT sit/stand desk
+- Steelcase Leap chair
+
 ### Laptop
 
-My main machine is a 2018 Macbook Pro (aka _the one with the touch bar_), 2.9 GHz 6-Core Intel Core i9, 32GB RAM, 1TB SSD. Purchased second hand on eBay in October 2019 for £2,399.00, which included 2 years Apple Care.
+My main machine is a 2018 Macbook Pro (aka _the one with the touch bar_), 15" screen, 2.9 GHz 6-Core Intel Core i9, 32GB RAM, 1TB SSD. Purchased second hand on eBay in October 2019 for £2,399.00, which included 2 years Apple Care.
 
 This is the second time I've bought a Mac from eBay. Each time I've made sure to buy one with Apple Care, which has been essential - in both cases I have made a claim (for this device, the screen had a group of dead pixels - the screen replacement would have cost £600 otherwise).
 
@@ -57,15 +65,15 @@ After faffing around with cheaper headphones, I invested in the [Bose QuietComfo
 
 ### Desk
 
-Everything (except me) sits on an [IKEA BEKANT](https://www.ikea.com/gb/en/p/bekant-desk-sit-stand-white-stained-oak-veneer-white-s39282249/) sit/stand desk. Purchased in 2015, this is the third incarnation after the motors failed on the previous two. Luckily the desk has a 10 year warranty, but it's a real pain to swap out your desk, and so on reliability alone I couldn’t recommend it.
+Everything (except me) sits on an [IKEA BEKANT](https://www.ikea.com/gb/en/p/bekant-desk-sit-stand-white-stained-oak-veneer-white-s39282249/) sit/stand desk. Purchased in 2015, this is the third incarnation after the motors failed on the previous two. Luckily the desk has a 10 year warranty, but it's a real pain to swap out your desk, and so on reliability alone I couldn't recommend it.
 
-One of the best parts of the desk is a customised version of the controller, available on THIS SITE. This gives the desk preset memory functionality - pressing the up button a specific number of times will automatically move the desk to the pre-programmed height. It’s a small thing that makes a huge difference, and we’ll worth the $50. As a nice bonus, the motors haven’t failed since I installed the new controller!
+One of the best parts of the desk is a customised version of the controller, dubbed [Megadesk](https://www.tindie.com/products/gcormier/megadesk/). This enhances the desk with memory positions - pressing the up button a specific number of times will automatically move the desk to the pre-programmed height. It's a small thing that makes a huge difference, and well worth the $45. As a nice bonus, the motors haven't failed since I installed the new controller!
 
 ### Chair
 
-My chair is the bargain of the whole setup. It's a [Steelcase Leap](https://www.steelcase.com/products/office-chairs/leap/) v1 which someone was selling for £50. These retail at £700+ so it’s fair to say I was very happy at picking it up.
+My chair is the bargain of the whole setup. It's a [Steelcase Leap](https://www.steelcase.com/products/office-chairs/leap/) v1 which someone was selling for £50. These retail at £700+ so it's fair to say I was very happy at picking it up.
 
-The Leap replaced my old [IKEA MARKUS](https://www.ikea.com/gb/en/p/markus-office-chair-glose-black-20103101/) chair. Similar to the Bose headphones, you get what you pay for - I can sit for hours in the Steelcase without any back pain or numbness, unlike the MARKUS. I’m a firm believer of investing in anything that will improve long term health and for me, the chair is THE most important thing. If this one breaks, I wouldn’t hesitate to pay full price for a replacement, it’s that good.
+The Leap replaced my old [IKEA MARKUS](https://www.ikea.com/gb/en/p/markus-office-chair-glose-black-20103101/) chair. Similar to the Bose headphones, you get what you pay for - I can sit for hours in the Steelcase without any back pain or numbness, unlike the MARKUS. I'm a firm believer of investing in anything that will improve long term health and for me, the chair is THE most important thing. If this one breaks, I wouldn't hesitate to pay full price for a replacement, it's that good.
 
 You might notice the cape adorning the back of the chair - this was a leaving gift from my old colleagues at Mubaloo 🙂
 
@@ -80,17 +88,20 @@ A few years ago my house was rewired, and we took the opportunity to lay cat6 ca
 - The lamp is an [IKEA SKURUP desk lamp](https://www.ikea.com/gb/en/p/skurup-work-wall-lamp-black-30326021/) which clamps onto the side of the desk.
 - The black thing at the back right is a Masterplug surge protected extension tower.
 - The desktop wallpaper images are from Bing. [A script](https://github.com/thejandroman/bing-wallpaper) runs in the background to automatically download the 'image of the day' from Bing. These are randomly presented by using the Mac _Desktop & Screensaver_ settings.
-- The pencil pot is an old tin with the words ‘Clotted Cream fudge and toffee’. When I was 8, my parents bought me my first computer, an [A500+](https://en.wikipedia.org/wiki/Amiga_500_Plus). I soon found out it could speak any words that you typed in, and these were its first words.
-- The picture in the wall is of [Kaikoura](https://www.kaikoura.co.nz/), on the South Island in New Zealand. It’s one of the best places in the world to swim with dolphins!
+- The pencil pot is an old tin with the words ‘Clotted Cream fudge and toffee'. When I was 8, my parents bought me my first computer, an [A500+](https://en.wikipedia.org/wiki/Amiga_500_Plus). I soon found out it could speak any words that you typed in, and these were its first words.
+
+Lastly, the picture in the wall is of [Kaikoura](https://www.kaikoura.co.nz/), on the South Island in New Zealand. It's one of the best places in the world to swim with dolphins, as I found out myself!
+
+<img src="/img/2021-02-27-home-office/dolphin.jpg" alt="Me in the sea with a snorkel and wetsuit, swimming next to a dolphin" />
 
 ## Software
 
 I'm a web developer, primarily working with JavaScript and TypeScript. Here are some of the tools I use every day.
 
-- [Visual Studio Code](https://code.visualstudio.com/) - simply the nicest authoring experience I’ve had when working with TypeScript, although I find it chugs a little on larger projects. Sublime Text 3 is much faster, but lacks the bells and whistles.
-- [Docker](https://www.docker.com/) - these days I try to isolate all of my development environments into Docker containers. This ensures that updates and changes to the main system don’t affect individual projects. VS Code has first class support for launching and attaching to these containers.
+- [Visual Studio Code](https://code.visualstudio.com/) - simply the nicest authoring experience I've had when working with TypeScript, although I find it chugs a little on larger projects. Sublime Text 3 is much faster, but lacks the bells and whistles.
+- [Docker](https://www.docker.com/) - these days I try to isolate all of my development environments into Docker containers. This ensures that updates and changes to the main system don't affect individual projects. VS Code has first class support for launching and attaching to these containers.
 - [iTerm 2](https://iterm2.com/) - I use the terminal for all git commands, backing off to VS Code for merge/rebase conflicts.
-- [Firefox](https://www.mozilla.org/firefox/) - for years, there was an issue with Firefox on Mac when rendering to so-called 'HiDPI' displays, which caused excessive CPU and battery usage. This seems to have been resolved, and now FF has become my go-to browser. I prefer Mozilla’s privacy-first approach to that of Chrome, and Safari still lags behind in many features (although it is getting better - maybe I should give it another try).
+- [Firefox](https://www.mozilla.org/firefox/) - for years, there was an issue with Firefox on Mac when rendering to so-called 'HiDPI' displays, which caused excessive CPU and battery usage. This seems to have been resolved, and now FF has become my go-to browser. I prefer Mozilla's privacy-first approach to that of Chrome, and Safari still lags behind in many features (although it is getting better - maybe I should give it another try).
 - [Chrome](https://www.google.com/chrome/) - I have relegated Chrome to be used for testing sites during development. Keeping your main browser separate from your development/testing browser has a number of benefits, and this approach has served me well.
 - [Tiny Player](https://www.catnapgames.com/tiny-player-for-mac/) - a lightweight music player, without all the cruft and bulk (looking at you, iTunes).
 - [Mailplane](https://mailplaneapp.com/) - a nice wrapper for the GMail web interface. Keeps all my mail in one window.
