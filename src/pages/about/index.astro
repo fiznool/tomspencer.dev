@@ -1,0 +1,11 @@
+---
+import { getCollection } from 'astro:content';
+import About from '../../layouts/About.astro';
+
+const about = (await getCollection('about'))[0]
+const { Content } = await about.render();
+---
+
+<About {...about.data}>
+	<Content />
+</About>
