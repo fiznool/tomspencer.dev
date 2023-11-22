@@ -5,6 +5,7 @@ import Footer from '../../components/Footer.astro';
 import {SITE_TITLE, SITE_DESCRIPTION} from '../../consts';
 import {getCollection} from 'astro:content';
 import FormattedDate from '../../components/FormattedDate.astro';
+import {getBlogParams} from '../../utils';
 
 const posts = (await getCollection('blog')).sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
 ---
@@ -46,7 +47,7 @@ const posts = (await getCollection('blog')).sort((a, b) => b.data.pubDate.valueO
         color: rgb(var(--gray));
       }
       .description {
-				margin-top: 0.25rem;
+        margin-top: 0.25rem;
         margin-bottom: 0.5rem;
         color: rgb(var(--gray-dark));
         line-height: 1.4;
@@ -74,17 +75,20 @@ const posts = (await getCollection('blog')).sort((a, b) => b.data.pubDate.valueO
       <section>
         <ul>
           {
-            posts.map(post => (
-              <li>
-                <a href={`/blog/${post.slug}/`}>
-                  <h4 class="title">{post.data.title}</h4>
-                  <p class="date">
-                    <FormattedDate date={post.data.pubDate} />
-                  </p>
-                  {post.data.description ? <p class="description">{post.data.description}</p> : null}
-                </a>
-              </li>
-            ))
+            posts.map(post => {
+              const {path} = getBlogParams(post);
+              return (
+                <li>
+                  <a href={`/blog/${path}/`}>
+                    <h4 class="title">{post.data.title}</h4>
+                    <p class="date">
+                      <FormattedDate date={post.data.pubDate} />
+                    </p>
+                    {post.data.description ? <p class="description">{post.data.description}</p> : null}
+                  </a>
+                </li>
+              );
+            })
           }
         </ul>
       </section>
