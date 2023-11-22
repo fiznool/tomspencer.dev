@@ -15,7 +15,7 @@ It's 2020. You want to build a node.js app, and you've heard great things about 
 
 As with most things JavaScript, there are a myriad of posts, Stack Overflow answers and repositories you could use to get set up. Sadly many of these are out of date. The aim of this post is to help you set up a TypeScript project for building a node.js app, using the state of the art in 2020.
 
-Before we get started, if you want to skip the tutorial there is a concise summary [available at the end of the post]({{< relref "#summary">}}).
+Before we get started, if you want to skip the tutorial there is a concise summary [available at the end of the post](#summary).
 
 Otherwise, let's dive in!
 

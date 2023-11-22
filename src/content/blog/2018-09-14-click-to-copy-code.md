@@ -9,7 +9,7 @@ description: Writing code snippets in Hugo is simple and elegant, using a combin
 title: Adding click-to-copy buttons to a Hugo powered blog
 ---
 
-In [a previous post]({{< relref "2018-08-03-hugo-netlify-syntax-highlighting.md" >}}) I described the process of adding nicely highlighted code snippets to a Hugo-powered blog.
+In [a previous post](/blog/2018/08/03/hugo-netlify-syntax-highlighting) I described the process of adding nicely highlighted code snippets to a Hugo-powered blog.
 
 Some of the code snippets added to my own blog are fairly long, and selecting the code manually to copy and paste it into a text editor was proving annoying and error-prone. Inspired by other sites, I wanted to add a 'Copy' button to every snippet - when clicked, the button would take the code and copy it to the user's clipboard. This could then be pasted into a text editor for reuse elsewhere.
 

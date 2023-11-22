@@ -27,7 +27,7 @@ In addition to the above, the following software is recommended (but not essenti
 
 - [iTerm2](http://iterm2.com) - a terminal replacement app.
 
-_Running Windows? You can still install Cordova and deploy to an Android device, the instructions can be found [in this post]({{< relref "2017-05-30-a-guide-to-installing-cordova-on-windows-10.markdown" >}})._
+_Running Windows? You can still install Cordova and deploy to an Android device, the instructions can be found [in this post](/blog/2017/05/30/a-guide-to-installing-cordova-on-windows-10)._
 
 ## Steps
 
