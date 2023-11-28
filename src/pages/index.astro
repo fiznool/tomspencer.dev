@@ -2,39 +2,66 @@
 import BaseHead from '../components/BaseHead.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
-import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
+import {SITE_TITLE, SITE_DESCRIPTION} from '../consts';
 ---
 
 <!doctype html>
 <html lang="en">
-	<head>
-		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
-		<style>
-			main {
-        width: 576px;
-				text-align: center;
+  <head>
+    <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+    <style>
+      main {
+				max-width: 480px;
+        text-align: center;
+				padding: 2em 1em;
       }
-			.headshot {
-				width: 200px;
-				height: 200px;
-				border-radius: 100px;
-			}
-		</style>
-	</head>
-	<body>
-		<Header title={SITE_TITLE} />
-		<main>
-			<img src="/images/headshot.jpg" class="headshot">
-			<p>
-				I'm Tom, a Bristol-based web and mobile app developer, working primarily with React, React Native and node.js.
-			</p>
-			<p>
-				You can find out more on the <a href="/about">About page</a>, or read my semi-regular posts on the <a href="/blog">Blog</a>.
-			</p>
-			<p>
-				I'm available for hire on a contract basis - if your are looking for a developer to kick-start your project, or you need an extra pair of hands, please <a href="mailto:hello@tomspencer.dev">get in touch</a>.
-			</p>
-		</main>
-		<Footer />
-	</body>
+			header img {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+      }
+      header h1 {
+        color: var(--accent-dark);
+				font-size: 2em;
+      }
+      section.info {
+        margin-top: 20px;
+      }
+			section.info h2 {
+        font-size: 1.4em;
+      }
+      nav {
+        margin-top: 20px;
+      }
+			nav > ul  {
+        list-style: none;
+				margin: 0;
+				padding: 0;
+      }
+      nav > ul > li > a {
+        font-size: 1.3em;
+				text-decoration: none;
+        color: var(--accent);
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <header>
+        <img src="/images/headshot.jpg" alt="Tom Spencer's Picture" />
+        <h1>Tom Spencer</h1>
+      </header>
+      <section class="info">
+        <h2>Web and Mobile App developer from Bristol, UK.</h2>
+      </section>
+      <nav>
+        <ul>
+          <li><a href="/about/">About</a></li>
+          <li><a href="/blog/">Blog</a></li>
+          <li><a href="mailto:hello@tomspencer.dev">Contact</a></li>
+        </ul>
+      </nav>
+    </main>
+    <Footer />
+  </body>
 </html>
