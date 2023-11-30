@@ -37,11 +37,11 @@ The text after the triple backtick governs the code language, which is used to d
 The markdown above will produce the following output:
 
 ```jsx
-import React from 'react'
+import React from 'react';
 
-const App = () => <div class="app"></div>
+const App = () => <div class="app"></div>;
 
-export default App
+export default App;
 ```
 
 You can also customise the colour scheme used for highlighting the keywords by adding the following to your `config.toml`:

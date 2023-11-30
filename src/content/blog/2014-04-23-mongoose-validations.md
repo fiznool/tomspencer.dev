@@ -38,7 +38,7 @@ var UserSchema = new Schema({
     min: 64,
     max: 64,
   },
-})
+});
 ```
 
 Notice how we use the object form `{}` of defining a schema property when we want to define validation rules. In the example above, we are asking Mongoose to set up the following rules:
@@ -59,10 +59,10 @@ var UserSchema = new Schema({
     valipubDate: function (email) {
       return /^[a-zA-Z0-9.!#$%&’*+\/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/.test(
         email,
-      )
+      );
     },
   },
-})
+});
 ```
 
 The validate function should return `false` if the field is invalid, or `true` otherwise. The matcher above uses the [HTML5 email validation regex](http://www.w3.org/TR/html-markup/input.email.html) to validate that the input field is a valid email address.

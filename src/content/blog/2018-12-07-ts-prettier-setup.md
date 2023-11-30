@@ -108,7 +108,7 @@ Let's test that the TypeScript config is working.
 - Add the following code to `index.ts`:
 
 ```ts
-console.log('Hello, World')
+console.log('Hello, World');
 ```
 
 - In the terminal, run the command:
@@ -182,7 +182,7 @@ For the second error, TSLint is complaining that we are using `console.log()`, b
 
 ```ts
 // tslint:disable-next-line:no-console
-console.log('Hello, World')
+console.log('Hello, World');
 ```
 
 At this point, we should have one TSLint error, reporting the use of double quotes instead of single quotes. Instead of fixing this manually, we are going to delegate this to Prettier.

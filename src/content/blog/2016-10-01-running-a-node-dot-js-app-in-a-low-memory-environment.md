@@ -62,15 +62,15 @@ function dumbCalculator() {
   const variables = {
     first: 1,
     second: 2,
-  }
+  };
 
-  return variables.first + variables.second
+  return variables.first + variables.second;
 }
 
 // dumbCalculator is a global variable,
 // and so for the lifetime of this application,
 // it will not be garbage collected.
-console.log(dumbCalculator())
+console.log(dumbCalculator());
 ```
 
 Garbage collection in v8 is an expensive process, as it is employed via a _stop the world_ mechanism. This literally pauses execution of your application whilst the collector is run. For this reason, v8 tries not to run garbage collection unless it is running out of space.
@@ -166,13 +166,13 @@ heroku config:set WEB_CONCURRENCY=4
 Then, in your `app/index.js`:
 
 ```js
-const cluster = require('cluster')
+const cluster = require('cluster');
 if (cluster.isMaster) {
   // Master process: fork our child processes.
-  const numWorkers = process.env.WEB_CONCURRENCY || 1
+  const numWorkers = process.env.WEB_CONCURRENCY || 1;
   for (var i = 0; i < numWorkers; i += 1) {
-    console.log('** Booting new worker **')
-    cluster.fork()
+    console.log('** Booting new worker **');
+    cluster.fork();
   }
 
   // Respawn any child processes that die
@@ -181,9 +181,9 @@ if (cluster.isMaster) {
       'process %s died (%s). restarting...',
       worker.id,
       signal || code,
-    )
-    cluster.fork()
-  })
+    );
+    cluster.fork();
+  });
 } else {
   // Child process: start app normally.
   // Add your code here!

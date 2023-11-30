@@ -47,17 +47,17 @@ Under the guise of the [KISS principle](http://en.wikipedia.org/wiki/KISS_princi
 I started by using JavaScript's `Math.random()` to generate an 8-character 'random' ID, using a pre-defined alphabet.
 
 ```js
-var ALPHABET = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ'
+var ALPHABET = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
 
-var ID_LENGTH = 8
+var ID_LENGTH = 8;
 
 var generate = function () {
-  var rtn = ''
+  var rtn = '';
   for (var i = 0; i < ID_LENGTH; i++) {
-    rtn += ALPHABET.charAt(Math.floor(Math.random() * ALPHABET.length))
+    rtn += ALPHABET.charAt(Math.floor(Math.random() * ALPHABET.length));
   }
-  return rtn
-}
+  return rtn;
+};
 ```
 
 - Since `Math.random` creates a number between `0` (inclusive) and `1` (exclusive), `Math.random() * alphabet.length` creates a number anywhere between `0` and just less than `alphabet.length`.
@@ -73,19 +73,19 @@ Requirement 2) specifies it should be easy to speak over the phone. This will be
 The first thing to trim is the lowercase/uppercase, which could cause confusion. IDs look nicer with lowercase, so the uppercase was removed.
 
 ```js
-var ALPHABET = '0123456789abcdefghijklmnopqrstuvwxyz'
+var ALPHABET = '0123456789abcdefghijklmnopqrstuvwxyz';
 ```
 
 Next up, numbers that look like letters. This is another source of confusion, and so the numbers `0` and `1` and the letters `o` and `l` were removed.
 
 ```js
-var ALPHABET = '23456789abcdefghijkmnpqrstuvwxyz'
+var ALPHABET = '23456789abcdefghijkmnpqrstuvwxyz';
 ```
 
 Lastly, rude words, aka requirement 3). It could be quite embarrassing to generate an ID with a rude word. Sticking to English profanities, it turns out that most rude words are formed from the majority of the following characters: `cfhistu`. These characters were also removed.
 
 ```js
-var ALPHABET = '23456789abdegjkmnpqrvwxyz'
+var ALPHABET = '23456789abdegjkmnpqrvwxyz';
 ```
 
 Our final alphabet contains 25 characters.
@@ -101,25 +101,25 @@ However, since `Math.random()` is a _pseudorandom_ generator, which means it is 
 As a failsafe, a function can be added to check that the generated ID is indeed unique:
 
 ```js
-var UNIQUE_RETRIES = 9999
+var UNIQUE_RETRIES = 9999;
 
 var generateUnique = function (previous) {
-  previous = previous || []
-  var retries = 0
-  var id
+  previous = previous || [];
+  var retries = 0;
+  var id;
 
   // Try to generate a unique ID,
   // i.e. one that isn't in the previous.
   while (!id && retries < UNIQUE_RETRIES) {
-    id = generate()
+    id = generate();
     if (previous.indexOf(id) !== -1) {
-      id = null
-      retries++
+      id = null;
+      retries++;
     }
   }
 
-  return id
-}
+  return id;
+};
 ```
 
 For this to work, you should pass in an array of previously generated IDs.

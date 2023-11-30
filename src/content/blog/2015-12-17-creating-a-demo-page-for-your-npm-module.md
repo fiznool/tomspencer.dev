@@ -81,16 +81,16 @@ Here's an example:
 ```js
 // index.js
 
-'use strict'
+'use strict';
 
-var superAwesome = require('super-awesome')
+var superAwesome = require('super-awesome');
 
-var input = document.getElementById('input')
-var result = document.getElementById('result')
+var input = document.getElementById('input');
+var result = document.getElementById('result');
 
 input.addEventListener('input', function () {
-  result.value = superAwesome(input.value)
-})
+  result.value = superAwesome(input.value);
+});
 ```
 
 Here, we are listening for any changes to the `input` and updating the `result` using the `superAwesome` library.
@@ -122,13 +122,13 @@ The next step is to include a Gruntfile to package up your module as something t
 Here is the Gruntfile in full:
 
 ```js
-'use strict'
+'use strict';
 
 module.exports = function (grunt) {
   // Load grunt tasks automatically, when needed
   require('jit-grunt')(grunt, {
     buildcontrol: 'grunt-build-control',
-  })
+  });
 
   grunt.initConfig({
     clean: {
@@ -194,13 +194,13 @@ module.exports = function (grunt) {
         },
       },
     },
-  })
+  });
 
-  grunt.registerTask('build', ['clean', 'copy', 'browserify'])
-  grunt.registerTask('serve', ['build', 'connect', 'watch'])
-  grunt.registerTask('deploy', ['build', 'buildcontrol'])
-  grunt.registerTask('default', ['serve'])
-}
+  grunt.registerTask('build', ['clean', 'copy', 'browserify']);
+  grunt.registerTask('serve', ['build', 'connect', 'watch']);
+  grunt.registerTask('deploy', ['build', 'buildcontrol']);
+  grunt.registerTask('default', ['serve']);
+};
 ```
 
 Here is a rundown of the tasks, and what occurs at each stage.

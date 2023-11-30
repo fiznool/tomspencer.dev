@@ -70,10 +70,10 @@ We'll now create the entrypoint for our app.
 
 ```ts
 const writeMessage = (message: string) => {
-  console.log(message)
-}
+  console.log(message);
+};
 
-writeMessage('Hello, World!')
+writeMessage('Hello, World!');
 ```
 
 Hopefully this should make sense - we are defining a function using arrow syntax, and calling it with a message. The `message: string` argument demonstrates the usage of a type - this defines the `message` parameter as a string.
@@ -109,11 +109,11 @@ If all went well, you should see `Hello, World!` printed to the terminal.
 If you open the compiled file `dist/app.js` in VSCode you will notice a few differences to the source file:
 
 ```js
-'use strict'
+'use strict';
 var writeMessage = function (message) {
-  console.log(message)
-}
-writeMessage('Hello, World!')
+  console.log(message);
+};
+writeMessage('Hello, World!');
 ```
 
 - There is a `"use strict"` declaration at the top of the file.
