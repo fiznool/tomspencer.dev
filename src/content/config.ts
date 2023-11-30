@@ -14,7 +14,10 @@ const blog = defineCollection({
     description: z.string().optional(),
     // Transform string to Date object
     pubDate: z.string().transform((str) => new Date(str)),
-    updatedDate: z.coerce.date().optional(),
+    updatedDate: z
+      .string()
+      .transform((str) => new Date(str))
+      .optional(),
     heroImage: z.string().optional(),
     comments: z.boolean().optional(),
   }),
