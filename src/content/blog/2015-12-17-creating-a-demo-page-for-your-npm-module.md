@@ -1,11 +1,12 @@
 ---
 categories:
-- nodejs
-- npm
-- javascript
+  - nodejs
+  - npm
+  - javascript
 comments: true
-pubDate: "2015-12-17T07:12:02+00:00"
-description: So, you've created a super-awesome npm module, and you want to share
+pubDate: '2015-12-17T07:12:02+00:00'
+description:
+  So, you've created a super-awesome npm module, and you want to share
   it with the world. How do you create a demo page?
 title: Creating a demo page for your npm module
 ---
@@ -77,20 +78,19 @@ The rest of `index.js` will likely be concerned with accessing the DOM and manip
 
 Here's an example:
 
-``` js
+```js
 // index.js
 
-'use strict';
+'use strict'
 
-var superAwesome = require('super-awesome');
+var superAwesome = require('super-awesome')
 
-var input = document.getElementById('input');
-var result = document.getElementById('result');
+var input = document.getElementById('input')
+var result = document.getElementById('result')
 
-input.addEventListener('input', function() {
-  result.value = superAwesome(input.value);
-});
-
+input.addEventListener('input', function () {
+  result.value = superAwesome(input.value)
+})
 ```
 
 Here, we are listening for any changes to the `input` and updating the `result` using the `superAwesome` library.
@@ -101,10 +101,10 @@ This is the part where you create your demo page. Open up the `index.html` page 
 
 In your HTML page, we need to include our script file too, so make sure you include a reference to it. It's a good idea to put the script below your DOM elements so that we know that the DOM is fully initialised before we add the event handler.
 
-``` html
+```html
 <html>
   <body>
-    <input id="input" type="text">
+    <input id="input" type="text" />
     <pre id="result"></pre>
     <script src="index.js"></script>
   </body>
@@ -121,42 +121,41 @@ The next step is to include a Gruntfile to package up your module as something t
 
 Here is the Gruntfile in full:
 
-``` js
-'use strict';
+```js
+'use strict'
 
 module.exports = function (grunt) {
-
   // Load grunt tasks automatically, when needed
   require('jit-grunt')(grunt, {
-    buildcontrol: 'grunt-build-control'
-  });
+    buildcontrol: 'grunt-build-control',
+  })
 
   grunt.initConfig({
     clean: {
-      demo: ['build']
+      demo: ['build'],
     },
     copy: {
       demo: {
         files: {
-          'build/index.html': ['demo/index.html']
-        }
-      }
+          'build/index.html': ['demo/index.html'],
+        },
+      },
     },
 
     browserify: {
       options: {
         alias: {
-          'diffex': './lib/index.js'
-        }
+          diffex: './lib/index.js',
+        },
       },
       demo: {
         files: {
-          'build/index.js': ['demo/index.js']
+          'build/index.js': ['demo/index.js'],
         },
         options: {
-          watch: true
-        }
-      }
+          watch: true,
+        },
+      },
     },
 
     buildcontrol: {
@@ -165,15 +164,15 @@ module.exports = function (grunt) {
         commit: true,
         push: true,
         connectCommits: false,
-        message: 'Built live demo from commit %sourceCommit%'
+        message: 'Built live demo from commit %sourceCommit%',
       },
       demo: {
         options: {
           // Update the remote to point to your github repo
           remote: 'git@github.com:fiznool/super-awesome.git',
           branch: 'gh-pages',
-        }
-      }
+        },
+      },
     },
 
     connect: {
@@ -182,41 +181,41 @@ module.exports = function (grunt) {
           base: 'build',
           hostname: 'localhost',
           port: 3000,
-          livereload: true
-        }
-      }
+          livereload: true,
+        },
+      },
     },
 
     watch: {
       dev: {
         files: 'build/index.js',
         options: {
-          livereload: true
-        }
-      }
-    }
-  });
+          livereload: true,
+        },
+      },
+    },
+  })
 
-  grunt.registerTask('build', ['clean', 'copy', 'browserify']);
-  grunt.registerTask('serve', ['build', 'connect', 'watch']);
-  grunt.registerTask('deploy', ['build', 'buildcontrol']);
-  grunt.registerTask('default', ['serve']);
-};
+  grunt.registerTask('build', ['clean', 'copy', 'browserify'])
+  grunt.registerTask('serve', ['build', 'connect', 'watch'])
+  grunt.registerTask('deploy', ['build', 'buildcontrol'])
+  grunt.registerTask('default', ['serve'])
+}
 ```
 
 Here is a rundown of the tasks, and what occurs at each stage.
 
 ### `build`
 
- - Cleans the `build` folder, removing atrifacts from a previous build.
- - Copies over the `demo/index.html` file to the `build` folder.
- - Uses browserify to package up the source in `demo/index.js` and anything that is `require`d into a single bundle, and writes it out to the `build` folder.
+- Cleans the `build` folder, removing atrifacts from a previous build.
+- Copies over the `demo/index.html` file to the `build` folder.
+- Uses browserify to package up the source in `demo/index.js` and anything that is `require`d into a single bundle, and writes it out to the `build` folder.
 
 ### `serve`
 
- - Builds the demo page as above.
- - Begins a web server on port `3000` where you can preview the demo page.
- - Watches for changes to the JavaScript source, and automatically re-browserifies the bundle, and reloads the browser.
+- Builds the demo page as above.
+- Begins a web server on port `3000` where you can preview the demo page.
+- Watches for changes to the JavaScript source, and automatically re-browserifies the bundle, and reloads the browser.
 
 ### `deploy`
 

@@ -1,8 +1,8 @@
 ---
 categories:
-- thoughts
+  - thoughts
 comments: true
-pubDate: "2014-03-18T11:41:40+01:00"
+pubDate: '2014-03-18T11:41:40+01:00'
 title: A New Beginning
 ---
 

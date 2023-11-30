@@ -1,11 +1,12 @@
 ---
 categories:
-- front-end
-- html
-- css
+  - front-end
+  - html
+  - css
 comments: true
-pubDate: "2014-07-08T19:53:24+01:00"
-description: I've recently been working on a web app from the ground up. Bootstrap
+pubDate: '2014-07-08T19:53:24+01:00'
+description:
+  I've recently been working on a web app from the ground up. Bootstrap
   3 was a good choice to get started - it is super easy to get a site up and running
   without having to worry too much about styling. In essence, it allowed me to build
   out some of the requirements with a wireframe-y front-end.

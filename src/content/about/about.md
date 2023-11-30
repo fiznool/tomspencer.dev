@@ -1,5 +1,5 @@
 ---
-title: "About Me"
+title: 'About Me'
 ---
 
 Hi, I'm Tom - a web and mobile app developer based in Bristol, UK.
@@ -12,27 +12,29 @@ If you are interesting in hiring me to work on a web or mobile application, or w
 
 ---
 
-Testimonials
-------------
+## Testimonials
 
 Here are a sample of kind words from past and current clients: more testimonials can be found on my [LinkedIn page](https://www.linkedin.com/in/fiznool/).
 
 > It was a true pleasure working with Tom. Right from the first point of contact Tom quickly understood and applied himself to the needs of correlating my designs to the finished app. His attention to detail was exceptional, it was incredibly refreshing to work with someone who really cared and realised the importance of detail.
+>
 > <footer><cite>Ed George, Brand and Business Strategy Specialist at <a href="https://www.postsaver.com">Postsaver Ltd</a></cite></footer>
 
 > Tom is excellent! He teaches our students how to build mobile apps on our coding bootcamp, and has delivered high level, bespoke, technical workshops for our clients. He is extremely personable, professional, reliable and knowledgable and never fails to deliver outstanding work.
+>
 > <footer><cite>Pete New, founder at <a href="https://developme.training/">DevelopMe Training</a></cite></footer>
 
 > Tom is a fantastic full-stack JS developer. He is equally skilled in front-end and server-side work, and will work quickly and thoughtfully, whatever the task. Tom will offer constructive feedback on designs/plans where he has ideas or suggestions. Rather than simply implement blindly, he will think of the objectives and practicalities, and work to develop a solution. I don't often come across developers like this.
+>
 > <footer><cite>John Jackson, founder at <a href="https://getflg.com/">FLG Technology</a></cite></footer>
 
 > Tom has worked with Natural Apptitude on a number of projects ranging from mobile app development to work on our backend services. During these contracts Tom has demonstrated a very high level of professionalism and impressed not only with excellent and broad technical skills, but also his soft-skills: fitting in quickly and working well with both colleagues and clients. Overall, Tom has been an excellent member of our team and we would not hesitate in recommending him to others.
+>
 > <footer><cite>Joe Woodhouse, founder at <a href="http://www.natural-apptitude.co.uk/">Natural Apptitude</a></cite></footer>
 
 ---
 
-Portfolio
----------
+## Portfolio
 
 ### [Confinus](https://www.haute-grub.com/)
 
@@ -90,8 +92,7 @@ A SaaS platform for building chatbot workflows, without any coding knowledge nee
 
 ---
 
-Training
---------
+## Training
 
 ### [DevelopMe Fellowship](https://developme.training/fellowship/)
 
@@ -107,11 +108,9 @@ Partnering with DevelopMe, two separate workshops were prepared and delivered to
 
 Feedback from Wazoku was very positive, proven by the desire to follow on from the AngularJS workshop with a TypeScript one.
 
-
 ---
 
-Community
----------
+## Community
 
 ### [SWmobile](http://meetup.com/swmobile)
 
@@ -127,8 +126,7 @@ I [delivered a lightning talk](https://www.youtube.com/watch?v=ROUvsRJipUs) at a
 
 ---
 
-Experience
-----------
+## Experience
 
 For more details on my past experience, please refer to [my LinkedIn profile](http://uk.linkedin.com/in/fiznool).
 
@@ -175,8 +173,7 @@ In addition to my duties as a Senior Mobile Web Developer, I also carried out th
 
 ---
 
-Open Source
------------
+## Open Source
 
 The source code for the following libraries can be found on [GitHub](http://github.com/fiznool).
 
@@ -194,8 +191,7 @@ Express 4.x middleware which sanitizes user-supplied data to prevent MongoDB Ope
 
 ---
 
-Technical Knowledge
--------------------
+## Technical Knowledge
 
 ### Front-End
 
@@ -225,7 +221,6 @@ Technical Knowledge
 
 ---
 
-Where Next?
------------
+## Where Next?
 
 Head over to my [blog](/blog) for semi-regular updates on what I'm working on. Or if you'd like to get in touch, you can [send me an email](mailto:hello@tomspencer.dev).

@@ -1,14 +1,14 @@
 ---
 categories:
-- nodejs
-- javascript
-- typescript
-pubDate: "2020-05-22T19:41:44+01:00"
-description: 'It''s 2020. You want to build a node.js app, and you''ve heard great
+  - nodejs
+  - javascript
+  - typescript
+pubDate: '2020-05-22T19:41:44+01:00'
+description: "It's 2020. You want to build a node.js app, and you've heard great
   things about TypeScript. Let this post act as your guide through the forest of compilers
   and specifications as you navigate to the promised land: a strongly-typed node.js
-  codebase.'
-title: 'It''s 2020: let''s build a node.js app with TypeScript'
+  codebase."
+title: "It's 2020: let's build a node.js app with TypeScript"
 ---
 
 It's 2020. You want to build a node.js app, and you've heard great things about TypeScript. You want to build it the _right way_ this time, starting with good intentions.
@@ -41,7 +41,7 @@ Firstly, create a new folder - this is where the project files will live. I'll c
 
 Next, open a terminal in this folder and run:
 
-``` sh
+```sh
 npm init
 ```
 
@@ -51,7 +51,7 @@ Follow the instructions. Once finished, you will have a brand new `package.json`
 
 Next, install the latest version of TypeScript:
 
-``` sh
+```sh
 npm install -D typescript
 ```
 
@@ -68,12 +68,12 @@ We'll now create the entrypoint for our app.
 - Create a new folder `src/`. Inside it, create a new file and name it `app.ts`.
 - Open the file in VSCode and add the following contents:
 
-``` ts
+```ts
 const writeMessage = (message: string) => {
-  console.log(message);
+  console.log(message)
 }
 
-writeMessage('Hello, World!');
+writeMessage('Hello, World!')
 ```
 
 Hopefully this should make sense - we are defining a function using arrow syntax, and calling it with a message. The `message: string` argument demonstrates the usage of a type - this defines the `message` parameter as a string.
@@ -108,12 +108,12 @@ If all went well, you should see `Hello, World!` printed to the terminal.
 
 If you open the compiled file `dist/app.js` in VSCode you will notice a few differences to the source file:
 
-``` js
-"use strict";
+```js
+'use strict'
 var writeMessage = function (message) {
-    console.log(message);
-};
-writeMessage('Hello, World!');
+  console.log(message)
+}
+writeMessage('Hello, World!')
 ```
 
 - There is a `"use strict"` declaration at the top of the file.
@@ -136,7 +136,7 @@ As demonstrated above, TypeScript can be run entirely from the command line usin
 
 Creating a new config file is straightforward. Run the following:
 
-``` sh
+```sh
 node_modules/.bin/tsc --init
 ```
 
@@ -149,7 +149,7 @@ If you open this file, you will find that most of the configuration options are 
 
 Your `tsconfig.json` file should now resemble the following:
 
-``` json
+```json
 {
   "compilerOptions": {
     ...
@@ -162,7 +162,7 @@ Your `tsconfig.json` file should now resemble the following:
 
 Now, we can compile the TypeScript code with the following command:
 
-``` sh
+```sh
 node_modules/.bin/tsc
 ```
 
@@ -170,13 +170,13 @@ The `tsc` executable will automatically pick up the configuration and compile th
 
 ### npm run script
 
-Up to now, we've been running the `tsc` executable directly, from the `node_modules` folder. We can clean this up through the use of an __npm run script__.
+Up to now, we've been running the `tsc` executable directly, from the `node_modules` folder. We can clean this up through the use of an **npm run script**.
 
 Run scripts are added to the `package.json` file under the `scripts` property. Scripts automatically place anything in the `node_modules/.bin` folder into the path, meaning you don't need to write out `node_modules/.bin` every time you need to run an executable from that folder.
 
 Let's create a run script for compiling the code. In `package.json`, find the `scripts` property and change to the following:
 
-``` json
+```json
 {
   "scripts": {
     "compile": "tsc"
@@ -186,7 +186,7 @@ Let's create a run script for compiling the code. In `package.json`, find the `s
 
 Now, run
 
-``` sh
+```sh
 npm run compile
 ```
 
@@ -200,7 +200,7 @@ This is where many tutorials end, but we are going to take things one step furth
 
 JavaScript is not a fixed entity - it is constantly evolving, with new language features being added all the time. Each year, the governing body known as [TC39](https://www.ecma-international.org/memento/tc39-rf-tg.htm) ratifies a new set of features and APIs for the language, which are added to the main ECMAScript specification.
 
-In 2020 we saw [optional chaining](https://github.com/tc39/proposal-optional-chaining), [nullish coalescing](https://github.com/tc39/proposal-nullish-coalescing),  [dynamic imports](https://github.com/tc39/proposal-dynamic-import), [BigInt](https://github.com/tc39/proposal-bigint) and many more features introduced. 2020 was a great year for the language!
+In 2020 we saw [optional chaining](https://github.com/tc39/proposal-optional-chaining), [nullish coalescing](https://github.com/tc39/proposal-nullish-coalescing), [dynamic imports](https://github.com/tc39/proposal-dynamic-import), [BigInt](https://github.com/tc39/proposal-bigint) and many more features introduced. 2020 was a great year for the language!
 
 Once the specification is released, it takes time for the various JavaScript engines to implement these features. At any one time, there are also numerous other proposed features at various stages, which may or may not be released in a future specification.
 
@@ -227,7 +227,7 @@ Since Babel does not check types, the TypeScript compiler still has a role to pl
 
 Make the following changes to the `compilerOptions` property in `tsconfig.json`:
 
-``` json
+```json
 {
   "target": "ESNext",
   "lib": ["ESNext"],
@@ -249,7 +249,7 @@ We know that `console` is a valid global for our target environment, but we need
 
 To do this, run:
 
-``` sh
+```sh
 npm install -D @types/node
 ```
 
@@ -269,7 +269,7 @@ Notice something? Or the absence of something? The `dist/` folder has not reappe
 
 We should now install Babel and make it TypeScript-aware. Install the following modules:
 
-``` sh
+```sh
 npm install -D @babel/core @babel/cli @babel/preset-typescript @babel/preset-env
 ```
 
@@ -286,15 +286,18 @@ Similar to TypeScript, Babel uses a configuration file to declare how it should 
 
 Create a file `babel.config.json` in the project root. Add the following contents:
 
-``` json
+```json
 {
   "presets": [
     ["@babel/preset-typescript"],
-    ["@babel/preset-env", {
-      "targets": {
-        "node": "current"
+    [
+      "@babel/preset-env",
+      {
+        "targets": {
+          "node": "current"
+        }
       }
-    }]
+    ]
   ]
 }
 ```
@@ -307,7 +310,7 @@ Since the `tsc` command is now relegated to type checking, we need to include Ba
 
 Replace the existing compile script in `package.json` with the following:
 
-``` json
+```json
 "tsc && babel src --out-dir dist --extensions .ts"
 ```
 
@@ -332,7 +335,7 @@ If you open `dist/app.js`, you should notice that:
 
 As before, we can now run
 
-``` sh
+```sh
 node dist/app.js
 ```
 
@@ -352,13 +355,13 @@ Here is a brief summary of the steps needed to get TypeScript and Babel working 
 
 - Install TypeScript, Babel and the node.js types:
 
-``` sh
+```sh
 npm install -D typescript @types/node @babel/core @babel/cli @babel/preset-typescript @babel/preset-env
 ```
 
 - Create a `tsconfig.json` file with the following contents:
 
-``` json
+```json
 {
   "compilerOptions": {
     "target": "ESNext",
@@ -366,7 +369,7 @@ npm install -D typescript @types/node @babel/core @babel/cli @babel/preset-types
     "module": "commonjs",
     "outDir": "./dist",
     "noEmit": true,
-    "esModuleInterop": true,
+    "esModuleInterop": true
   },
   "include": ["./src/**/*"]
 }
@@ -374,22 +377,25 @@ npm install -D typescript @types/node @babel/core @babel/cli @babel/preset-types
 
 - Create a `babel.config.json` file with the following contents:
 
-``` json
+```json
 {
   "presets": [
     ["@babel/preset-typescript"],
-    ["@babel/preset-env", {
-      "targets": {
-        "node": "current"
+    [
+      "@babel/preset-env",
+      {
+        "targets": {
+          "node": "current"
+        }
       }
-    }]
+    ]
   ]
 }
 ```
 
 - Add the following npm run script to `package.json`:
 
-``` json
+```json
 {
   "scripts": {
     "compile": "tsc && babel src --out-dir dist --extensions .ts"

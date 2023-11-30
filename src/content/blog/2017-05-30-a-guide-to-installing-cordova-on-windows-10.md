@@ -1,10 +1,11 @@
 ---
 categories:
-- mobile
-- cordova
+  - mobile
+  - cordova
 comments: true
-pubDate: "2017-05-30T21:18:23+01:00"
-description: This is the second part of a guide to installing the Cordova framework,
+pubDate: '2017-05-30T21:18:23+01:00'
+description:
+  This is the second part of a guide to installing the Cordova framework,
   and deals with installation on Windows 10.
 title: A guide to installing Cordova on Windows 10
 ---
@@ -107,7 +108,7 @@ We'll now use the Command Line tools to install the SDK and other necessary tool
 - Open the Git Bash app.
 - Type the following commands:
 
-``` bash
+```bash
 cd C:/android/tools/bin
 ./sdkmanager.bat "build-tools;25.0.3" "emulator" "extras;intel;Hardware_Accelerated_Execution_Manager" "platforms;android-25" "platform-tools" "system-images;android-25;google_apis;x86" --verbose
 ./avdmanager.bat -v create avd -n x86 -k "system-images;android-25;google_apis;x86" -g "google_apis"
@@ -226,7 +227,7 @@ For example, if you have code living in folders at `C:\Users\<username>\Code`, c
 
 Once you are in the correct directory, run the following:
 
-``` bash
+```bash
 cordova create cordova-hello-world
 cd cordova-hello-world
 cordova platform add android
@@ -249,7 +250,7 @@ Before deploying to the emulator, there's more stuff to install.
 
 Now we can deploy the app to the Android emulator. In the Git Bash window, type:
 
-``` bash
+```bash
 cordova emulate android
 ```
 

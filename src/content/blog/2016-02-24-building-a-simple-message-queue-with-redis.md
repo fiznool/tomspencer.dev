@@ -1,10 +1,11 @@
 ---
 categories:
-- redis
-- nodejs
+  - redis
+  - nodejs
 comments: true
-pubDate: "2016-02-24T08:41:25+00:00"
-description: This post explores how a simple message queue can be built to support
+pubDate: '2016-02-24T08:41:25+00:00'
+description:
+  This post explores how a simple message queue can be built to support
   delayed messages, using Redis.
 title: Building a simple message queue with Redis
 ---
@@ -28,13 +29,13 @@ To add a message, we first need to generate a unique ID for the message. You'll 
 
 Once you have this unique ID, store it with your (stringified) message in the hash with `HSET`.
 
-``` sh
+```sh
 redis> HSET messages <id> <message>
 ```
 
 We should then insert the message ID with the message due date timestamp into the sorted set:
 
-``` sh
+```sh
 redis> ZADD due <due_timestamp> <id>
 ```
 
@@ -44,19 +45,19 @@ Now that we have our messages being produced, we need a consumer.
 
 To receive a message, we need to poll the sorted set to see if any messages are past their due date. We do this with a periodic `ZRANGEBYSCORE` call, along with the current timestamp.
 
-``` sh
+```sh
 redis> ZRANGEBYSCORE due -inf <current_timestamp> LIMIT 0 1
 ```
 
 If this returns a message ID, we know that this message is ready for consumption. We lookup the message from the hash:
 
-``` sh
+```sh
 redis> HGET messages <message_id>
 ```
 
 And finally, we remove the message from the sorted set and the hash, to ensure it won't be received again.
 
-``` sh
+```sh
 redis> ZREM due <message_id>
 redis> HDEL messages <message_id>
 ```

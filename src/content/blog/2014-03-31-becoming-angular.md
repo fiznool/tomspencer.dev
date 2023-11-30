@@ -1,11 +1,12 @@
 ---
 categories:
-- angularjs
-- javascript
-- front-end
+  - angularjs
+  - javascript
+  - front-end
 comments: true
-pubDate: "2014-03-31T10:28:17+01:00"
-description: During my time at Mubaloo I was a vocal supporter of Backbone.js. But
+pubDate: '2014-03-31T10:28:17+01:00'
+description:
+  During my time at Mubaloo I was a vocal supporter of Backbone.js. But
   recently there has been lots of noise around AngularJS.
 title: Becoming Angular
 ---

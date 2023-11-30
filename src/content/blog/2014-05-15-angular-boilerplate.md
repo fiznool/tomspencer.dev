@@ -1,10 +1,11 @@
 ---
 categories:
-- tooling
-- javascript
+  - tooling
+  - javascript
 comments: true
-pubDate: "2014-05-15T12:36:51+01:00"
-description: It's important in this era of web application development to have a strong
+pubDate: '2014-05-15T12:36:51+01:00'
+description:
+  It's important in this era of web application development to have a strong
   toolset at your disposal. Growing complexity with 'fat' client apps can lead to
   a maintenance nightmare if not properly planned and thought out.
 title: Angular Boilerplate

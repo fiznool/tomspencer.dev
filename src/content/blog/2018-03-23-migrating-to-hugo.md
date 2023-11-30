@@ -1,7 +1,7 @@
 ---
 categories:
-- thoughts
-pubDate: "2018-03-23T21:34:10Z"
+  - thoughts
+pubDate: '2018-03-23T21:34:10Z'
 description: I've recently decided to take the plunge and migrate my site to Hugo.
 title: Migrating to Hugo
 ---

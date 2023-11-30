@@ -1,11 +1,12 @@
 ---
 categories:
-- nodejs
-- javascript
-- heroku
+  - nodejs
+  - javascript
+  - heroku
 comments: true
-pubDate: "2016-10-01T11:33:02+01:00"
-description: Running a node.js app in a low-memory environment requires some additional
+pubDate: '2016-10-01T11:33:02+01:00'
+description:
+  Running a node.js app in a low-memory environment requires some additional
   work to ensure that the v8 garbage collector is aware of the memory ceiling. This
   post outlines an approach to achieve this.
 slug: running-a-node-dot-js-app-in-a-low-memory-environment
@@ -49,7 +50,7 @@ v8 collects garbage when an object is no longer reachable from the _root node_. 
 
 For example, the following code shows objects which are candidates for garbage collection:
 
-``` js
+```js
 function dumbCalculator() {
   // This is a local variable.
   // When this function is executed,
@@ -60,16 +61,16 @@ function dumbCalculator() {
   // at some point in the future.
   const variables = {
     first: 1,
-    second: 2
-  };
+    second: 2,
+  }
 
-  return variables.first + variables.second;
+  return variables.first + variables.second
 }
 
 // dumbCalculator is a global variable,
 // and so for the lifetime of this application,
 // it will not be garbage collected.
-console.log(dumbCalculator());
+console.log(dumbCalculator())
 ```
 
 Garbage collection in v8 is an expensive process, as it is employed via a _stop the world_ mechanism. This literally pauses execution of your application whilst the collector is run. For this reason, v8 tries not to run garbage collection unless it is running out of space.
@@ -84,7 +85,7 @@ Armed with this knowledge, we can now begin to play with v8's CLI flags in order
 
 Without further ado, here is a startup script (`startup.sh`) which I use to bootstrap my node apps.
 
-``` sh
+```sh
 #!/bin/bash
 #
 # This script supports the following environment vars:
@@ -129,7 +130,7 @@ exec node $node_args
 
 So, if we were running in an environment with 512MB of RAM available, we would run the script as follows:
 
-``` sh
+```sh
 WEB_MEMORY=512 bash startup.sh
 ```
 
@@ -139,7 +140,7 @@ The script above also allows us to support running a node app with [cluster](htt
 
 Say for example, you want to run 4 processes in a cluster on your 512MB instance. Run your script with:
 
-``` sh
+```sh
 WEB_MEMORY=128 bash startup.sh
 ```
 
@@ -158,28 +159,31 @@ We can therefore support clustering by setting the `WEB_CONCURRENCY` variable to
 
 For example:
 
-``` sh
+```sh
 heroku config:set WEB_CONCURRENCY=4
 ```
 
 Then, in your `app/index.js`:
 
-``` js
-const cluster = require('cluster');
-if(cluster.isMaster) {
+```js
+const cluster = require('cluster')
+if (cluster.isMaster) {
   // Master process: fork our child processes.
-  const numWorkers = process.env.WEB_CONCURRENCY || 1;
+  const numWorkers = process.env.WEB_CONCURRENCY || 1
   for (var i = 0; i < numWorkers; i += 1) {
-    console.log('** Booting new worker **');
-    cluster.fork();
+    console.log('** Booting new worker **')
+    cluster.fork()
   }
 
   // Respawn any child processes that die
-  cluster.on('exit', function(worker, code, signal) {
-    console.log('process %s died (%s). restarting...', worker.id, signal || code);
-    cluster.fork();
-  });
-
+  cluster.on('exit', function (worker, code, signal) {
+    console.log(
+      'process %s died (%s). restarting...',
+      worker.id,
+      signal || code,
+    )
+    cluster.fork()
+  })
 } else {
   // Child process: start app normally.
   // Add your code here!

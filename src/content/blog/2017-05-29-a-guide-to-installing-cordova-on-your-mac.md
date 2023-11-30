@@ -1,10 +1,11 @@
 ---
 categories:
-- mobile
-- cordova
+  - mobile
+  - cordova
 comments: true
-pubDate: "2017-05-29T09:40:59+01:00"
-description: Cordova is a popular framework for building hybrid mobile applications.
+pubDate: '2017-05-29T09:40:59+01:00'
+description:
+  Cordova is a popular framework for building hybrid mobile applications.
   This post provides a complete guide on how to install it on a Mac running OS X or
   macOS, so you can deploy a Cordova-based app to your iOS or Android device.
 title: A guide to installing Cordova on your Mac
@@ -67,7 +68,7 @@ Xcode is a hefty download, weighing in at over 4GB, so you might want to skip to
 
 Once Xcode has installed itself, you should open a Terminal window. Type the following:
 
-``` bash
+```bash
 xcode-select --install
 ```
 
@@ -133,7 +134,7 @@ We'll now use the Command Line tools to install the SDK and other necessary tool
 - Open a terminal window.
 - Type the following commands:
 
-``` bash
+```bash
 cd ~/android/tools/bin
 ./sdkmanager "build-tools;25.0.3" "emulator" "platforms;android-25" "platform-tools" "system-images;android-25;google_apis;x86" --verbose
 ./avdmanager -v create avd -n x86 -k "system-images;android-25;google_apis;x86" -g "google_apis"
@@ -232,7 +233,7 @@ For example, if you have code living in folders at `/Users/<username>/Code`, cha
 
 Once you are in the correct directory, run the following:
 
-``` bash
+```bash
 cordova create cordova-hello-world
 cd cordova-hello-world
 cordova platform add ios android
@@ -245,7 +246,7 @@ Before continuing, please ensure that the commands above all worked correctly, w
 
 _Note_: if you see the following error: `xcode-select: error: tool 'xcodebuild' requires Xcode ...` then run the following commands to try again:
 
-``` bash
+```bash
 sudo xcode-select --switch /Applications/Xcode.app/Contents/Developer
 cordova build
 ```
@@ -256,7 +257,7 @@ cordova build
 
 To deploy the app to the iOS simulator, type:
 
-``` bash
+```bash
 cordova emulate ios
 ```
 
@@ -268,7 +269,7 @@ The iOS simulator should automatically launch. When it has finished initialising
 
 To deploy the app to the Android emulator, type:
 
-``` bash
+```bash
 cordova emulate android
 ```
 
@@ -292,7 +293,7 @@ Once you have chosen your Bundle ID, update it by editing the file `config.xml` 
 
 When you change the Bundle ID, you need to regenerate the platform files. Do this by running the following commands from the project root directory in the terminal:
 
-``` bash
+```bash
 cordova platform rm ios android
 cordova platform add ios android
 ```
@@ -356,7 +357,7 @@ Now that Xcode and your iOS device are configured, you can deploy the app from t
 - Open a terminal window and navigate to the project root directory.
 - Run the command:
 
-``` bash
+```bash
 cordova run ios
 ```
 

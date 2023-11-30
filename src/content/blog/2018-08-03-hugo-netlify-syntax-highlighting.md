@@ -1,8 +1,9 @@
 ---
 categories:
-- writing
-pubDate: "2018-08-03T13:12:32+01:00"
-description: Hugo makes it really easy to add syntax highlighting to your code snippets.
+  - writing
+pubDate: '2018-08-03T13:12:32+01:00'
+description:
+  Hugo makes it really easy to add syntax highlighting to your code snippets.
   In this post I'll discuss how to enable this feature, and how to configure Netlify
   to build your site with nicely highlighted code.
 title: Deploying a Hugo-powered site to Netlify with source code syntax highlighting
@@ -14,7 +15,7 @@ After a bit of research I realised that Hugo natively supports [source code synt
 
 Supporting Chroma is as simple as adding the following to your `config.toml` file:
 
-``` toml
+```toml
 pygmentsCodeFences = true   # Enable triple backtick 'code fence' markdown
 pygmentsUseClasses = false  # Add inline styles, no need to compile extra CSS
 ```
@@ -35,19 +36,17 @@ The text after the triple backtick governs the code language, which is used to d
 
 The markdown above will produce the following output:
 
-``` jsx
-import React from 'react';
+```jsx
+import React from 'react'
 
-const App = () => (
-  <div class="app"></div>
-);
+const App = () => <div class="app"></div>
 
-export default App;
+export default App
 ```
 
 You can also customise the colour scheme used for highlighting the keywords by adding the following to your `config.toml`:
 
-``` toml
+```toml
 pygmentsStyle = "friendly"  # Change this to the theme you want
 ```
 

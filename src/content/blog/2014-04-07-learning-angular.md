@@ -1,11 +1,12 @@
 ---
 categories:
-- angularjs
-- javascript
-- front-end
+  - angularjs
+  - javascript
+  - front-end
 comments: true
-pubDate: "2014-04-07T17:32:52+01:00"
-description: The last week has been an intense period of training. I've taken up the
+pubDate: '2014-04-07T17:32:52+01:00'
+description:
+  The last week has been an intense period of training. I've taken up the
   offer of a project to be built using AngularJS, and so my head has been down in
   tutorials, books and online docs. Here are some of the resources I found useful.
 title: Learning Angular
@@ -43,7 +44,7 @@ The Thinkster guide above is a little out of date, and doesn't include much info
 
 ## PhoneCat Tutorial
 
-Once you have read the things above, complete the [PhoneCat tutorial](https://github.com/angular/angular-phonecat). It puts all of the concepts above into practice. __It's really important you take this tutorial!!__ It is the icing on the cake, the stage that takes it from swimming around in your head, into your text editor and onto your browser. Don't miss this stage out, it will take a few hours but it is worth it.
+Once you have read the things above, complete the [PhoneCat tutorial](https://github.com/angular/angular-phonecat). It puts all of the concepts above into practice. **It's really important you take this tutorial!!** It is the icing on the cake, the stage that takes it from swimming around in your head, into your text editor and onto your browser. Don't miss this stage out, it will take a few hours but it is worth it.
 
 ## Extra Resources
 

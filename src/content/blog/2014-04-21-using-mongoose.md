@@ -1,12 +1,13 @@
 ---
 categories:
-- mongoose
-- mongodb
-- databases
-- back-end
+  - mongoose
+  - mongodb
+  - databases
+  - back-end
 comments: true
-pubDate: "2014-04-21T14:18:01+01:00"
-description: I've been learning about MongoDB recently, and here are a few thoughts
+pubDate: '2014-04-21T14:18:01+01:00'
+description:
+  I've been learning about MongoDB recently, and here are a few thoughts
   on my findings.
 title: Using Mongoose
 ---

@@ -1,12 +1,13 @@
 ---
 categories:
-- javascript
-- node
-- mongodb
-- docker
+  - javascript
+  - node
+  - mongodb
+  - docker
 comments: true
-pubDate: "2015-07-25T15:15:38+01:00"
-description: A workflow for using Docker to separate your development environment
+pubDate: '2015-07-25T15:15:38+01:00'
+description:
+  A workflow for using Docker to separate your development environment
   for each project.
 title: Setting up a Docker-based MEAN development environment
 ---
@@ -15,7 +16,7 @@ A common problem for any developer is setting up your development environment fo
 
 For this reason, it's a good idea to try and segregate your dev environment for each project. In this post, I'm going to outline how I setup a [MEAN][1] development environment using [Docker](http://www.docker.com), completely segregated from my host OS.
 
-  [1]: https://en.wikipedia.org/wiki/MEAN_(software_bundle)
+[1]: https://en.wikipedia.org/wiki/MEAN_(software_bundle)
 
 <!-- more -->
 
@@ -103,7 +104,7 @@ _Note: you may need to run the `docker` commands below with `sudo`._
 
 1. Build the image:
 
-``` sh
+```sh
 docker build -t fiznool/mean-docker-example .
 ```
 
@@ -111,7 +112,7 @@ This builds the image and tags it as `fiznool/mean-docker-example`.
 
 2. Create the container from the image:
 
-``` sh
+```sh
 docker run -it \
   --net="host" \
   -v `pwd`:/home/dev/src \
@@ -131,13 +132,13 @@ If all has worked correctly, the docker container will have loaded, the `mongo` 
 
 3. Inside the docker container, install the app's dependencies:
 
-``` sh
+```sh
 bower install && npm install
 ```
 
 4. Now you can start the web server:
 
-``` sh
+```sh
 grunt serve
 ```
 
@@ -155,7 +156,7 @@ You can exit the container at any time by running `exit` at the container's comm
 
 Since we named the container in the `docker run` command above, subsequent loading of the container can be achieved with a more straightforward command:
 
-``` sh
+```sh
 docker start -ia mean-docker-example
 ```
 

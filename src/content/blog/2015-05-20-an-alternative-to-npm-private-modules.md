@@ -1,10 +1,11 @@
 ---
 categories:
-- javascript
-- node
+  - javascript
+  - node
 comments: true
-pubDate: "2015-05-20T18:11:23+01:00"
-description: In this article, I'm going to show you how you can replicate npm private
+pubDate: '2015-05-20T18:11:23+01:00'
+description:
+  In this article, I'm going to show you how you can replicate npm private
   hosting using GitHub or Bitbucket, and access these modules from your deployment
   server and/or Heroku.
 title: An Alternative to npm Private Modules
@@ -46,7 +47,7 @@ Modules are marked as dependencies with `npm` in `package.json`, under `dependen
 
 Let's assume you have a project which needs to access code from a private module, `private-parts`, which is hosted on Bitbucket under the user `bigbluebananas`. Setup your package.json file to resemble the following:
 
-``` json
+```json
 {
   ...
   "dependencies": {
@@ -96,13 +97,13 @@ Firstly, grab the scripts from [this gist](https://gist.github.com/fiznool/88442
 
 Make sure the scripts are executable:
 
-``` bash
+```bash
 chmod +x setup-ssh.sh cleanup-ssh.sh
 ```
 
 Next, add the following entries to your `package.json`:
 
-``` json
+```json
 {
   ...
   "scripts": {
@@ -125,7 +126,7 @@ The last thing to do is to set the private key in the environment.
 
 The key should be base64 encoded. At the terminal, use
 
-``` bash
+```bash
 base64 -w 0 < deploy_key
 ```
 
@@ -141,7 +142,7 @@ This technique was built to work with Heroku. Simply set the `GIT_SSH_KEY` envir
 
 You can use git tags to achieve basic package versioning. Simply tag your private module and depend on this in your `package.json`:
 
-``` json
+```json
 {
   ...
   "dependencies": {

@@ -1,9 +1,10 @@
 ---
 categories:
-- thoughts
+  - thoughts
 comments: true
-pubDate: "2014-03-25T10:29:29+01:00"
-description: While I was away, I had a lot of time to think about the future. The
+pubDate: '2014-03-25T10:29:29+01:00'
+description:
+  While I was away, I had a lot of time to think about the future. The
   past 8 years building web apps have been a lot of fun - challenging, sure, but fun
   too. Rather quickly, I came to the conclusion that I wanted to return to doing the
   job I love.

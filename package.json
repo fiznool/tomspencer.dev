@@ -7,7 +7,9 @@
     "start": "astro dev",
     "build": "astro check && astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "prettier:check": "prettier --check src/",
+    "prettier:fix": "prettier --write src/"
   },
   "dependencies": {
     "@astrojs/check": "^0.3.1",
@@ -15,6 +17,7 @@
     "@astrojs/rss": "^3.0.0",
     "@astrojs/sitemap": "^3.0.3",
     "astro": "^3.6.3",
+    "prettier": "^3.1.0",
     "typescript": "^5.3.2"
   }
 }

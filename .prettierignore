@@ -1,0 +1,7 @@
+# /node_modules/* in the project root is ignored by default
+android/*
+ios/*
+package*.json
+tsconfig.json
+dist/*
+public/*

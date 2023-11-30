@@ -1,6 +1,7 @@
 ---
-pubDate: "2021-02-27T06:30:44Z"
-description: Although 2020 was the year that remote working was forced upon many,
+pubDate: '2021-02-27T06:30:44Z'
+description:
+  Although 2020 was the year that remote working was forced upon many,
   I've been enjoying the flexibility of home working for a number of years. Here's
   my current home office setup.
 title: My Home Office

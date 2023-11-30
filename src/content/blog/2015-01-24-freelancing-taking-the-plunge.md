@@ -1,9 +1,10 @@
 ---
 categories:
-- freelance
+  - freelance
 comments: true
-pubDate: "2015-01-24T08:00:58+00:00"
-description: Is working full-time in a permanent job becoming a drag? Have you thought
+pubDate: '2015-01-24T08:00:58+00:00'
+description:
+  Is working full-time in a permanent job becoming a drag? Have you thought
   about freelancing instead? There's no time like the present.
 slug: freelancing-taking-the-plunge
 title: 'Freelancing: Taking the Plunge'
@@ -37,9 +38,9 @@ How to find a side project? This is a tough one, and probably the hardest part a
 
 I'd suggest the following approaches:
 
-*   Begin by attending as many networking events and meetups as you can. Tell everybody you meet that you are intending to become a freelancer and you are looking for part-time projects to start working on. If you live in a city, chances are there are already lots of meetup groups around. Start by checking out <a target="_blank" href="http://www.meetup.com">meetup.com</a>. There may be other local resources you can tap into - for example, here in Bristol, the <a target="_blank" href="http://www.under-score.org.uk/mailman/listinfo/underscore">underscore mailing list</a> is a fantastic way of keeping up to date with the local web development community.
-*   Get the word out on social media that you are looking for part-time projects.
-*   Check out online freelancing sites such as <a target="_blank" href="http://www.elance.com">Elance</a>, <a target="_blank" href="http://www.freelancer.com">Freelancer</a> and <a target="_blank" href="http://www.peopleperhour.com">People Per Hour</a>. These sites have a bad reputation in some quarters, due to the proliferation of engineers from the developing world bidding at very low rates. In my opinion, these sites can be useful, but you must spend time to search for the right client. Search for somebody who is based in your country, and preferably your timezone, so that communication is easy. Sell yourself on your skills but also the fact you are located close by, and make a big point of committing to fast, responsive communication. This is the _key_ for many clients - they want to know that you are technically capable, but equally, reliable.
+- Begin by attending as many networking events and meetups as you can. Tell everybody you meet that you are intending to become a freelancer and you are looking for part-time projects to start working on. If you live in a city, chances are there are already lots of meetup groups around. Start by checking out <a target="_blank" href="http://www.meetup.com">meetup.com</a>. There may be other local resources you can tap into - for example, here in Bristol, the <a target="_blank" href="http://www.under-score.org.uk/mailman/listinfo/underscore">underscore mailing list</a> is a fantastic way of keeping up to date with the local web development community.
+- Get the word out on social media that you are looking for part-time projects.
+- Check out online freelancing sites such as <a target="_blank" href="http://www.elance.com">Elance</a>, <a target="_blank" href="http://www.freelancer.com">Freelancer</a> and <a target="_blank" href="http://www.peopleperhour.com">People Per Hour</a>. These sites have a bad reputation in some quarters, due to the proliferation of engineers from the developing world bidding at very low rates. In my opinion, these sites can be useful, but you must spend time to search for the right client. Search for somebody who is based in your country, and preferably your timezone, so that communication is easy. Sell yourself on your skills but also the fact you are located close by, and make a big point of committing to fast, responsive communication. This is the _key_ for many clients - they want to know that you are technically capable, but equally, reliable.
 
 Many potential clients will ask to see a portfolio of past work. This is so that they can gauge that you are capable for the job. Getting a portfolio together can be difficult, especially if the majority of your work was undertaken as a full-time employee, under strict non-disclosure. If this is the case, it could be a good time to start contributing to something for free, to build up a small portfolio. If you are a developer, for example, you could contribute to an open source project.
 
@@ -69,9 +70,9 @@ Obviously, this means paying attention to the project plan and the deadlines, an
 
 In addition to this, now that you have officially begun freelance work, you should get into some good habits early on.
 
-*   Track your time. If you have managed to score a project at an hourly rate, then this is essential so you know how much to bill for. However, even if you are working on a fixed price contact, you should track how much time you actually spend on the project. This can help you to figure out how accurate your initial estimate was.
-*   Ensure you communicate on a regular basis with the client. Keep them updated with your progress, and even better, if you can, show them your progress.
-*   Invest some time into setting up an invoice template, and use it whenever you invoice. I'll talk about this some more in the Financials section below.
+- Track your time. If you have managed to score a project at an hourly rate, then this is essential so you know how much to bill for. However, even if you are working on a fixed price contact, you should track how much time you actually spend on the project. This can help you to figure out how accurate your initial estimate was.
+- Ensure you communicate on a regular basis with the client. Keep them updated with your progress, and even better, if you can, show them your progress.
+- Invest some time into setting up an invoice template, and use it whenever you invoice. I'll talk about this some more in the Financials section below.
 
 You might also want to look into getting a contract in place between you and your client. This isn't always necessary, but I'd advise to get one in place, just in case anything goes wrong. You don't need to spend hundreds of pounds on lawyers, though - there are plenty of resources online you can use. I particularly like the legalese-free <a target="_blank" href="http://stuffandnonsense.co.uk/projects/contract-killer/">Contract Killer</a> template.
 

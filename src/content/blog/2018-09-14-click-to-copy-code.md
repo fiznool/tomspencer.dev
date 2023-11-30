@@ -1,8 +1,9 @@
 ---
 categories:
-- javascript
-pubDate: "2018-09-14T13:12:32+01:00"
-description: Writing code snippets in Hugo is simple and elegant, using a combination
+  - javascript
+pubDate: '2018-09-14T13:12:32+01:00'
+description:
+  Writing code snippets in Hugo is simple and elegant, using a combination
   of markdown code fences and Hugo's support for syntax highlighting. Recently I've
   been looking to add a button to automatically copy a code snippet to the clipboard,
   and I've documented my solution in this post.
@@ -22,11 +23,14 @@ As described in the previous post, code snippets are authored with markdown code
     ``` jsx
     import React from 'react';
     ```
+
 The above is compiled to the following HTML output by Hugo:
 
-``` html
+```html
 <div class="highlight">
-  <pre style="background-color:#f0f0f0;tab-size:4"><code class="language-jsx" data-lang="jsx"><span style="color:#007020;font-weight:bold">import</span> React from <span style="color:#4070a0">'react'</span>;</code></pre>
+  <pre
+    style="background-color:#f0f0f0;tab-size:4"
+  ><code class="language-jsx" data-lang="jsx"><span style="color:#007020;font-weight:bold">import</span> React from <span style="color:#4070a0">'react'</span>;</code></pre>
 </div>
 ```
 
@@ -49,9 +53,9 @@ In the spirit of progressive enhancement, we only want to add a Copy button if t
 
 The actual copy is performed by calling `document.execCommand('copy')`. Thankfully browsers provide a method which allows us to check whether this command is available. So we use this command to perform the check, and end early if it isn't possible:
 
-``` js
-if(!document.queryCommandSupported('copy')) {
-  return;
+```js
+if (!document.queryCommandSupported('copy')) {
+  return
 }
 ```
 
@@ -61,8 +65,8 @@ Next, we need to find the highlighted code blocks on the page. As already mentio
 
 Let's use a DOM API to find all of these containers:
 
-``` js
-var highlightBlocks = document.getElementsByClassName('highlight');
+```js
+var highlightBlocks = document.getElementsByClassName('highlight')
 ```
 
 > Note: I'm using `getElementsByClassName` instead of `querySelectorAll` since we know that we are searching by class name, and the former performs better in [benchmarks](https://www.measurethat.net/Benchmarks/Show/4076).
@@ -71,7 +75,7 @@ We can now iterate over each highlighted code block and add our copy button.
 
 Unfortunately, since `getElementsByClassName` returns an 'array-like' structure (an [HTMLCollection](https://developer.mozilla.org/en-US/docs/Web/API/HTMLCollection)) rather than an actual array, the array iterator methods (such as `.forEach()`) aren't available to us here. Instead, we use a good ol' `for` loop to iterate over the elements returned from the DOM:
 
-``` js
+```js
 for (var i = 0; i < highlightBlocks.length; i++) {
   // highlightBlocks[i] is the `<div class="highlight">` element
 }
@@ -85,29 +89,27 @@ For each highlighted code block, we'd like to add an HTML 'Copy' button.
 
 To do this, create a new function which will handle this logic on a particular element:
 
-``` js
-function addCopyButton(containerEl) {
-
-}
+```js
+function addCopyButton(containerEl) {}
 ```
 
 We can then call this function inside our for loop:
 
-``` js
+```js
 for (var i = 0; i < highlightBlocks.length; i++) {
-  addCopyButton(highlightBlocks[i]);
+  addCopyButton(highlightBlocks[i])
 }
 ```
 
 Let's implement the function. We'll create our button, and add it to the DOM:
 
-``` js
+```js
 function addCopyButton(containerEl) {
-  var copyBtn = document.createElement("button");
-  copyBtn.className = "highlight-copy-btn";
-  copyBtn.textContent = "Copy";
+  var copyBtn = document.createElement('button')
+  copyBtn.className = 'highlight-copy-btn'
+  copyBtn.textContent = 'Copy'
 
-  containerEl.appendChild(copyBtn);
+  containerEl.appendChild(copyBtn)
 }
 ```
 
@@ -117,29 +119,29 @@ When the page loads, each highlighted code block should now contain a button bel
 
 If you browse to your blog post, any highlighted code block will contain a 'Copy' button, but it doesn't look very nice - it will be rendered after the block, and will use the browser's default style. Let's fix this by adding the following styles to your stylesheet:
 
-``` css
+```css
 .highlight {
-    position: relative;
+  position: relative;
 }
 .highlight pre {
-    padding-right: 75px;
+  padding-right: 75px;
 }
 .highlight-copy-btn {
-    position: absolute;
-    bottom: 7px;
-    right: 7px;
-    border: 0;
-    border-radius: 4px;
-    padding: 1px;
-    font-size: 0.7em;
-    line-height: 1.8;
-    color: #fff;
-    background-color: #777;
-    min-width: 55px;
-    text-align: center;
+  position: absolute;
+  bottom: 7px;
+  right: 7px;
+  border: 0;
+  border-radius: 4px;
+  padding: 1px;
+  font-size: 0.7em;
+  line-height: 1.8;
+  color: #fff;
+  background-color: #777;
+  min-width: 55px;
+  text-align: center;
 }
 .highlight-copy-btn:hover {
-    background-color: #666;
+  background-color: #666;
 }
 ```
 
@@ -151,10 +153,8 @@ The final piece in the puzzle is to copy the code text to the clipboard when the
 
 Add a click handler to the button:
 
-``` js
-copyBtn.addEventListener('click', function() {
-
-});
+```js
+copyBtn.addEventListener('click', function () {})
 ```
 
 When the button is clicked, we need to perform the following to copy the text inside the code block:
@@ -165,26 +165,26 @@ When the button is clicked, we need to perform the following to copy the text in
 
 To do this, we need to create another function, whose responsibility is to select all text inside a given HTML node:
 
-``` js
+```js
 function selectText(node) {
-  var selection = window.getSelection();
-  var range = document.createRange();
-  range.selectNodeContents(node);
-  selection.removeAllRanges();
-  selection.addRange(range);
-  return selection;
+  var selection = window.getSelection()
+  var range = document.createRange()
+  range.selectNodeContents(node)
+  selection.removeAllRanges()
+  selection.addRange(range)
+  return selection
 }
 ```
 
 We can now call this function inside our click handler, passing in the node containing the code (this is the `<pre>` element, accessed from the container element via `.firstElementChild`). Once the text is selected, we copy it, then remove the selection.
 
-``` js
-var codeEl = containerEl.firstElementChild;
-copyBtn.addEventListener('click', function() {
-  var selection = selectText(codeEl);
-  document.execCommand('copy');
-  selection.removeAllRanges();
-});
+```js
+var codeEl = containerEl.firstElementChild
+copyBtn.addEventListener('click', function () {
+  var selection = selectText(codeEl)
+  document.execCommand('copy')
+  selection.removeAllRanges()
+})
 ```
 
 If we now access our blog post, clicking a 'Copy' button inside a highlighted code block should copy the code into your clipboard, allowing you to paste it anywhere else.
@@ -200,82 +200,82 @@ To improve this, we're going to add the following functionality:
 
 Since this is very similar logic, we are going to extract the functionality to _show a message for 1s_ into a separate function:
 
-``` js
+```js
 function flashCopyMessage(el, msg) {
-  el.textContent = msg;
-  setTimeout(function() {
-    el.textContent = "Copy";
-  }, 1000);
+  el.textContent = msg
+  setTimeout(function () {
+    el.textContent = 'Copy'
+  }, 1000)
 }
 ```
 
 We then change our click handler to contain the following:
 
-``` js
+```js
 try {
-  var selection = selectText(codeEl);
-  document.execCommand('copy');
-  selection.removeAllRanges();
+  var selection = selectText(codeEl)
+  document.execCommand('copy')
+  selection.removeAllRanges()
 
   flashCopyMessage(copyBtn, 'Copied!')
-} catch(e) {
-  console && console.log(e);
-  flashCopyMessage(copyBtn, 'Failed :\'(')
+} catch (e) {
+  console && console.log(e)
+  flashCopyMessage(copyBtn, "Failed :'(")
 }
 ```
 
 ### Final code
 
-``` js
-(function() {
-  'use strict';
+```js
+;(function () {
+  'use strict'
 
-  if(!document.queryCommandSupported('copy')) {
-    return;
+  if (!document.queryCommandSupported('copy')) {
+    return
   }
 
   function flashCopyMessage(el, msg) {
-    el.textContent = msg;
-    setTimeout(function() {
-      el.textContent = "Copy";
-    }, 1000);
+    el.textContent = msg
+    setTimeout(function () {
+      el.textContent = 'Copy'
+    }, 1000)
   }
 
   function selectText(node) {
-    var selection = window.getSelection();
-    var range = document.createRange();
-    range.selectNodeContents(node);
-    selection.removeAllRanges();
-    selection.addRange(range);
-    return selection;
+    var selection = window.getSelection()
+    var range = document.createRange()
+    range.selectNodeContents(node)
+    selection.removeAllRanges()
+    selection.addRange(range)
+    return selection
   }
 
   function addCopyButton(containerEl) {
-    var copyBtn = document.createElement("button");
-    copyBtn.className = "highlight-copy-btn";
-    copyBtn.textContent = "Copy";
+    var copyBtn = document.createElement('button')
+    copyBtn.className = 'highlight-copy-btn'
+    copyBtn.textContent = 'Copy'
 
-    var codeEl = containerEl.firstElementChild;
-    copyBtn.addEventListener('click', function() {
+    var codeEl = containerEl.firstElementChild
+    copyBtn.addEventListener('click', function () {
       try {
-        var selection = selectText(codeEl);
-        document.execCommand('copy');
-        selection.removeAllRanges();
+        var selection = selectText(codeEl)
+        document.execCommand('copy')
+        selection.removeAllRanges()
 
         flashCopyMessage(copyBtn, 'Copied!')
-      } catch(e) {
-        console && console.log(e);
-        flashCopyMessage(copyBtn, 'Failed :\'(')
+      } catch (e) {
+        console && console.log(e)
+        flashCopyMessage(copyBtn, "Failed :'(")
       }
-    });
+    })
 
-    containerEl.appendChild(copyBtn);
+    containerEl.appendChild(copyBtn)
   }
 
   // Add copy button to code blocks
-  var highlightBlocks = document.getElementsByClassName('highlight');
-  Array.prototype.forEach.call(highlightBlocks, addCopyButton);
-})();
+  var highlightBlocks = document.getElementsByClassName('highlight')
+  Array.prototype.forEach.call(highlightBlocks, addCopyButton)
+})()
 ```
 
 ## Summary

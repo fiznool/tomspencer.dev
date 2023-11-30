@@ -1,12 +1,12 @@
 ---
 categories:
-- mongoose
-- mongodb
-- databases
-- back-end
-- javascript
+  - mongoose
+  - mongodb
+  - databases
+  - back-end
+  - javascript
 comments: true
-pubDate: "2014-04-23T10:03:06+01:00"
+pubDate: '2014-04-23T10:03:06+01:00'
 description: Some thoughts on validating data according to a Mongoose Schema.
 title: Mongoose Validations
 ---
@@ -17,49 +17,52 @@ One of the great advantages of using [Mongoose](http://mongoosejs.com) over plai
 
 Mongoose's validators are easy to configure. When defining your schema, you can add extra options to the property that you want to be validated.
 
-``` js
+```js
 var UserSchema = new Schema({
   name: {
     type: String,
-    required: true
+    required: true,
   },
   email: {
     type: String,
     lowercase: true,
-    required: true
+    required: true,
   },
   role: {
     type: String,
-    enum: ['user',  'admin'],
-    default: 'user'
+    enum: ['user', 'admin'],
+    default: 'user',
   },
   password: {
     type: String,
     min: 64,
-    max: 64
-  }
-});
+    max: 64,
+  },
+})
 ```
+
 Notice how we use the object form `{}` of defining a schema property when we want to define validation rules. In the example above, we are asking Mongoose to set up the following rules:
 
- - `name` field must be a non-empty String.
- - `email` field must be a non-empty lowercase String.
- - `role` field must be one of `user` or `admin`, and defaults to `user` if none is specified.
- - `password` field must be a 64-character long String (e.g. a SHA-256 hash).
+- `name` field must be a non-empty String.
+- `email` field must be a non-empty lowercase String.
+- `role` field must be one of `user` or `admin`, and defaults to `user` if none is specified.
+- `password` field must be a 64-character long String (e.g. a SHA-256 hash).
 
 The full set of built-in validators can be found in the [Mongoose docs](http://mongoosejs.com/docs/validation.html).
 
 Unlike some other ORMs, Mongoose does not have out-of-the-box support for more complicated validations, such as email addresses. For this, we can perform a [custom validation](http://mongoosejs.com/docs/api.html#schematype_SchemaType-validate) by using the `validate` property. Let's improve the validation on the `email` field above:
 
-``` js
+```js
 var UserSchema = new Schema({
   email: {
     type: String,
-    valipubDate: function(email) {
-      return /^[a-zA-Z0-9.!#$%&’*+\/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/.test(email)
-    }
-  }
-});
+    valipubDate: function (email) {
+      return /^[a-zA-Z0-9.!#$%&’*+\/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/.test(
+        email,
+      )
+    },
+  },
+})
 ```
 
 The validate function should return `false` if the field is invalid, or `true` otherwise. The matcher above uses the [HTML5 email validation regex](http://www.w3.org/TR/html-markup/input.email.html) to validate that the input field is a valid email address.

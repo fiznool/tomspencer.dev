@@ -1,8 +1,9 @@
 ---
 categories:
-- freelance
-pubDate: "2018-03-31T21:02:44+01:00"
-description: My financial year ends today, and so I thought I'd take a moment to review
+  - freelance
+pubDate: '2018-03-31T21:02:44+01:00'
+description:
+  My financial year ends today, and so I thought I'd take a moment to review
   the company's progress over the past year.
 title: End of Year Review 2017-18
 ---

@@ -1,11 +1,12 @@
 ---
 categories:
-- typescript
-- tooling
-- vscode
-- nodejs
-pubDate: "2018-12-07T13:12:32+01:00"
-description: I've recently found myself becoming more dependant on TypeScript for
+  - typescript
+  - tooling
+  - vscode
+  - nodejs
+pubDate: '2018-12-07T13:12:32+01:00'
+description:
+  I've recently found myself becoming more dependant on TypeScript for
   type safety and autocompletion, and Prettier to format my code consistently. In
   this post I'll discuss how to set up prettier to work with a TypeScript codebase
   in VSCode.
@@ -33,7 +34,7 @@ Before we dive in, we'll set up our codebase. We'll be writing a node.js TypeScr
 
 To follow along with this article, create a new npm based project as follows:
 
-``` bash
+```bash
 mkdir ts-prettier-example
 cd ts-prettier-example
 npm init -y
@@ -68,7 +69,7 @@ VSCode supports TypeScript out of the box, with no further configuration needed.
 
 In the terminal, make sure you are inside the `ts-prettier-example` repository, and run the command:
 
-``` sh
+```sh
 # Install TypeScript locally
 npm install -D typescript
 
@@ -106,13 +107,13 @@ Let's test that the TypeScript config is working.
 - Create a new folder `src/` and add a new file `src/index.ts`.
 - Add the following code to `index.ts`:
 
-``` ts
-console.log("Hello, World");
+```ts
+console.log('Hello, World')
 ```
 
 - In the terminal, run the command:
 
-``` sh
+```sh
 node_modules/.bin/tsc
 ```
 
@@ -120,7 +121,7 @@ You should see a new folder `lib/` generated, with two files: `index.js` and `in
 
 Run the file with
 
-``` sh
+```sh
 node lib/index.js
 ```
 
@@ -133,11 +134,12 @@ By default, VSCode will use the version of TypeScript that it ships with. We can
 - Create a new folder `.vscode/` and add a file `.vscode/settings.json`.
 - Add the following to this JSON file:
 
-``` json
+```json
 {
   "typescript.tsdk": "./node_modules/typescript/lib"
 }
 ```
+
 - Open your `index.ts` file in VSCode. In the statusbar at the bottom of the screen, the TypeScript version number will be reported. Click on it, and ensure that the 'Use Workspace Version' option is checked ([see here](https://code.visualstudio.com/docs/languages/typescript#_using-the-workspace-version-of-typescript) for more details).
 
 ## TSLint
@@ -151,17 +153,15 @@ To install and configure TSLint:
 - [Install the VSCode extension](https://marketplace.visualstudio.com/items?itemName=eg2.tslint)
 - Install tslint locally by running the command:
 
-``` sh
+```sh
 npm install -D tslint
 ```
 
 - Create a new file `tslint.json` in the project root and add the following contents:
 
-``` json
+```json
 {
-  "extends": [
-    "tslint:recommended"
-  ],
+  "extends": ["tslint:recommended"],
   "rules": {
     "quotemark": [true, "single"]
   }
@@ -180,10 +180,9 @@ Let's fix the first error - add a newline to the end of the file.
 
 For the second error, TSLint is complaining that we are using `console.log()`, but in this case it is a valid use of the function. We are going to inform TSLint that this is correct by disabling the rule via a [rule flag](https://palantir.github.io/tslint/usage/rule-flags/). In particular, we are going to use the `// tslint:disable-next-line:rule1` form to disable the warning. Update your code to the following (making sure to preserve the newline at the end of the file):
 
-``` ts
+```ts
 // tslint:disable-next-line:no-console
-console.log("Hello, World");
-
+console.log('Hello, World')
 ```
 
 At this point, we should have one TSLint error, reporting the use of double quotes instead of single quotes. Instead of fixing this manually, we are going to delegate this to Prettier.
@@ -197,13 +196,13 @@ To install and configure Prettier:
 - [Install the VSCode extension](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
 - Install prettier locally by running the command:
 
-``` sh
+```sh
 npm install -D prettier
 ```
 
 - Create a new file `.prettierrc.json` (note the leading `.`) in the root of your project and add the following contents:
 
-``` json
+```json
 {
   "singleQuote": true,
   "trailingComma": "es5"
@@ -214,7 +213,7 @@ npm install -D prettier
   - Open the file `.vscode/settings.json`
   - Add the following entries:
 
-``` json
+```json
 {
   "editor.formatOnSave": true,
   "javascript.format.enable": false
@@ -229,14 +228,14 @@ Now that we have prettier formatting our code automatically, we need to make TSL
 
 We can achieve this by installing two new packages:
 
-``` sh
+```sh
 npm install -D tslint-config-prettier   # Makes TSLint accept any rules that prettier enforces
 npm install -D tslint-plugin-prettier   # Show prettier warnings as TSLint errors in the editor
 ```
 
 Now that these packages are installed, make TSLint aware of them by changing the `tslint.json` configuration to the following:
 
-``` json
+```json
 {
   "extends": [
     "tslint:recommended",

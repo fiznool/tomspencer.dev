@@ -1,0 +1,10 @@
+{
+  // Use the workspace bundled version of TS.
+  "typescript.tsdk": "./node_modules/typescript/lib",
+
+  // Ensure the Prettier extension is used as the default code formatter.
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+
+  // Format any files that can be formatted on save.
+  "editor.formatOnSave": true
+}

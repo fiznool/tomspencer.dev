@@ -1,8 +1,9 @@
 ---
 categories:
-- freelance
-pubDate: "2019-05-04T15:36:52+01:00"
-description: It's that time of the year when I take the time to look back on how my
+  - freelance
+pubDate: '2019-05-04T15:36:52+01:00'
+description:
+  It's that time of the year when I take the time to look back on how my
   business has performed.
 title: End of Year Review 2018-19
 ---
