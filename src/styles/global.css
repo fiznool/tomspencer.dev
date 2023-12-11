@@ -132,8 +132,9 @@ pre {
   border-radius: 8px;
 }
 
-pre > code {
+pre>code {
   all: unset;
+  font-size: 16px;
 }
 
 blockquote {
@@ -184,6 +185,7 @@ figcaption {
     display: flex;
     align-items: flex-end;
   }
+
   .multi-figures figure {
     margin: 0 10px;
     text-align: center;
