@@ -23,4 +23,17 @@ const blog = defineCollection({
   }),
 });
 
-export const collections = { about, blog };
+const projects = defineCollection({
+  schema: z.object({
+    title: z.string(),
+    summary: z.string(),
+    startDate: z.string() /*.transform((str) => new Date(str))*/,
+    endDate: z
+      .string()
+      /* .transform((str) => new Date(str)) */
+      .optional(),
+    faction: z.array(z.enum(['frontend', 'backend', 'mobile-app'])),
+  }),
+});
+
+export const collections = { about, blog, projects };
