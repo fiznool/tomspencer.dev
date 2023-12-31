@@ -4,11 +4,11 @@ categories:
   - mobile-app
 comments: true
 description: After using Expo for the latter part of 2023, my impression of the project has changed for the better.
-pubDate: '2024-01-01T08:13:41.854Z'
+pubDate: '2023-12-31T08:13:41.854Z'
 title: 'Thoughts on Expo'
 ---
 
-I've been working with React Native professionally since 2018. During this time, I've watched Expo grow from a simple framework extension to a cornerstone in the React Native ecosystem. This article delves into how Expo has transformed the landscape of mobile app development with React Native, and outlines the reasons why I would recommend building a React Native app with Expo in 2024.
+I've been working with React Native professionally since 2018. During this time, I've watched Expo grow from a simple framework extension to a cornerstone in the React Native ecosystem. As 2023 draws to a close, this article delves into how Expo has transformed the landscape of mobile app development with React Native, and outlines the reasons why I would recommend building a React Native app with Expo in 2024.
 
 ## Speed of getting started
 
@@ -37,3 +37,5 @@ The core Expo packages are open source and can be used independently of the EAS 
 ## Conclusion
 
 If I was starting a new React Native project today, I wouldn't hesitate to build it with Expo. It's evident that it has grown from a mere framework extension to an indispensable tool in the React Native ecosystem. Its ease of use, comprehensive package ecosystem, and innovative approach to native code management make it a compelling choice for developers.
+
+I'm looking forward to seeing what the Expo team launches in 2024!
