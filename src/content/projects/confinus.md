@@ -1,8 +1,8 @@
 ---
 title: 'Confinus'
 summary: 'A marketplace for food produce vendors and consumers.'
-startDate: TODO
-endDate: TODO
+startDate: 'January 2019'
+endDate: 'April 2023'
 faction:
   - 'frontend'
 ---

@@ -9,4 +9,4 @@ faction:
 
 I was hired to assist with the front-end implementation on an MVP called Torpio, which was a platform for connecting cloud apps with JavaScript. The front-end was built with Backbone.js, and I was brought in to complete the implementation, ready for launch.
 
-The project was eventually shelved in favour of a revised offering, which was dubbed Flow XO.
+The project was eventually shelved in favour of a new product which I built from the ground up - Flow XO.

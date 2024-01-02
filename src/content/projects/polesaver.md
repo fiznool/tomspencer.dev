@@ -1,14 +1,16 @@
 ---
 title: 'Polesaver'
 summary: 'An app to supply guidance on the installation of telegraph pole sleeves.'
-startDate: TODO
+startDate: 'July 2018'
 endDate: 'September 2020'
 faction:
   - 'mobile-app'
 ---
 
-The Polesaver app provides support on the installation, handling and maintenance of the 'Polesaver' product with a selection of guides, videos and written instructions. It was built using React Native.
+The _Polesaver_ product is a durable sleeve that is applied to the base of a telegraph pole before it is mounted in the ground. It significantly increases the usable lifespan of a pole, but only if it is installed correctly. The Polesaver team commissioned me to build an app to provide guidance on the optimal way to install the product, so it could be used by technicians in the field during installation.
 
-One particular challenge with this app making the content available when offline, particularly the media files. Videos and images were optimised for each platform and bundled with the app, to accommodate users in locations with no mobile signal.
+The app was built from a specification and detailed set of designs using React Native, and distributed for iOS and Android across the relevant app stores.
 
-The app continues to be used in areas where telegraph poles are installed. The videos in particular are very useful for training new installers, saving on the cost of in-person training and reducing the level of sleeve wastage in the field.
+One particular challenge was making the content available when offline, as often poles are installed in remote locations where there is no mobile signal. To support this use case, videos and images were optimised for each platform and bundled with the app.
+
+The app continues to be used in areas where telegraph poles are installed. The videos in particular are very useful for training new installers, saving on the cost of in-person training and reducing the amount of sleeve wastage in the field.
