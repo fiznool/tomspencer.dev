@@ -1,66 +1,59 @@
 ---
-import BaseHead from '../components/BaseHead.astro';
-import Footer from '../components/Footer.astro';
-import {SITE_TITLE, SITE_DESCRIPTION} from '../consts';
+import BaseLayout from "../layouts/BaseLayout.astro";
 ---
 
-<!doctype html>
-<html lang="en">
-  <head>
-    <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
-    <style>
-      main {
-				width: 480px;
-        text-align: center;
-				padding: 2em 1em;
-      }
-			header img {
-        width: 200px;
-        height: 200px;
-        border-radius: 50%;
-      }
-      header h1 {
-        color: var(--accent-dark);
-				font-size: 2em;
-      }
-      section.info {
-        margin-top: 20px;
-      }
-			section.info h2 {
-        font-size: 1.4em;
-      }
-      nav {
-        margin-top: 20px;
-      }
-			nav > ul  {
-        list-style: none;
-				margin: 0;
-				padding: 0;
-      }
-      nav > ul > li > a {
-        font-size: 1.3em;
-				text-decoration: none;
-        color: var(--accent);
-      }
-    </style>
-  </head>
-  <body>
-    <main>
-      <header>
-        <img src="/images/headshot.jpg" alt="Tom Spencer's Picture" />
-        <h1>Tom Spencer</h1>
-      </header>
-      <section class="info">
-        <h2>Web and Mobile App developer from Bristol, UK.</h2>
-      </section>
-      <nav>
-        <ul>
-          <li><a href="/about/">About</a></li>
-          <li><a href="/blog/">Blog</a></li>
-          <li><a href="mailto:hello@tomspencer.dev">Contact</a></li>
-        </ul>
-      </nav>
-    </main>
-    <Footer />
-  </body>
-</html>
+<BaseLayout noHeader>
+  <header>
+    <img src="/images/headshot.jpg" alt="Tom Spencer's Picture" />
+    <h1>Tom Spencer</h1>
+  </header>
+  <section class="info">
+    <h2>Web and Mobile App developer from Bristol, UK.</h2>
+  </section>
+  <nav>
+    <ul>
+      <li><a href="/about/">About</a></li>
+      <li><a href="/blog/">Blog</a></li>
+      <li><a href="mailto:hello@tomspencer.dev">Contact</a></li>
+    </ul>
+  </nav>
+</BaseLayout>
+
+<style is:global>
+  main {
+    width: 480px;
+    text-align: center;
+    padding: 2em 1em;
+  }
+</style>
+
+<style>
+  header img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+  }
+  header h1 {
+    color: var(--accent-dark);
+    font-size: 2em;
+  }
+  section.info {
+    margin-top: 20px;
+  }
+  section.info h2 {
+    font-size: 1.4em;
+  }
+  nav {
+    margin-top: 20px;
+  }
+  nav > ul  {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  nav > ul > li > a {
+    font-size: 1.3em;
+    text-decoration: none;
+    color: var(--accent);
+  }
+</style>

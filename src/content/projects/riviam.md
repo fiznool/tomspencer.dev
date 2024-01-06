@@ -2,6 +2,7 @@
 title: 'RIVIAM'
 summary: 'An app for clinicians to track immunisations.'
 startDate: 'June 2019'
+featured: true
 faction:
   - 'mobile-app'
 ---

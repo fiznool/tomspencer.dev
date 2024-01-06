@@ -1,0 +1,16 @@
+---
+import {getCollection} from 'astro:content';
+import Projects from '../../components/Projects.astro'
+import ArticleLayout from '../../layouts/ArticleLayout.astro';
+
+const projects = (await getCollection('projects'));
+
+const preamble = 'I have worked on a number of different projects throughout my career, ranging from front-end & full-stack web to backend APIs and cross-platform mobile apps.'
+---
+
+<ArticleLayout title="Projects">
+  <section>
+    <p>{preamble}</p>
+    <Projects projects={projects} />
+  </section>
+</ArticleLayout>

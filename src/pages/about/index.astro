@@ -1,11 +1,28 @@
 ---
 import { getCollection } from 'astro:content';
-import About from '../../layouts/About.astro';
+import Projects from '../../components/Projects.astro';
+import Testimonials from '../../components/Testimonials.astro';
+import { Content as Bio } from '../../content/about/bio.md';
+import { Content as Community } from '../../content/about/community.md'
+import { Content as Experience } from '../../content/about/experience.md'
+import { Content as FeaturedProjectsPreamble } from '../../content/about/featured-projects.md'
+import { Content as Knowledge } from '../../content/about/knowledge.md'
+import { Content as TestimonialsPreamble } from '../../content/about/testimonials.md'
+import ArticleLayout from '../../layouts/ArticleLayout.astro';
 
-const about = (await getCollection('about'))[0]
-const { Content } = await about.render();
+const projects = await getCollection('projects');
+const testimonials = await getCollection('testimonials');
+
+const title = "About Me";
 ---
 
-<About {...about.data}>
-	<Content />
-</About>
+<ArticleLayout title={title}>
+	<Bio />
+	<FeaturedProjectsPreamble />
+	<Projects projects={projects} filter="featured" />
+	<TestimonialsPreamble />
+	<Testimonials testimonials={testimonials} />
+	<Community />
+	<Experience />
+	<Knowledge />
+</BaseLayout>

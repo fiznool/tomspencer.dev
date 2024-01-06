@@ -7,9 +7,9 @@ import { SITE_TITLE } from '../consts';
 	<nav>
 		<h2><a href="/">{SITE_TITLE}</a></h2>
 		<div class="internal-links">
-			<HeaderLink href="/" isActive={Astro.url.pathname === '/'}>Home</HeaderLink>
-			<HeaderLink href="/blog" isActive={Astro.url.pathname.startsWith('/blog')}>Blog</HeaderLink>
 			<HeaderLink href="/about" isActive={Astro.url.pathname.startsWith('/about')}>About</HeaderLink>
+			<HeaderLink href="/projects" isActive={Astro.url.pathname.startsWith('/projects')}>Projects</HeaderLink>
+			<HeaderLink href="/blog" isActive={Astro.url.pathname.startsWith('/blog')}>Blog</HeaderLink>
 		</div>
 		<div class="social-links">
 			<a href="https://www.linkedin.com/in/fiznool" target="_blank">

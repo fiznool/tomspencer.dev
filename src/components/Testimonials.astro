@@ -1,0 +1,81 @@
+---
+import { type CollectionEntry, getCollection } from 'astro:content';
+import Card from './Card.astro';
+
+type Props = {
+  testimonials: Array<CollectionEntry<'testimonials'>>
+};
+
+const { testimonials } = Astro.props;
+---
+
+<div class="testimonials">
+  {testimonials.map(testimonial => {
+    const { body, data: { contact, company } } = testimonial;
+
+    const companyName = company.url
+      ? <a href={company.url}>{company.name}</a>
+      : company.name;
+
+    return (
+      <Card>
+        {testimonial.data.contact.avatar && (
+          <img src={testimonial.data.contact.avatar} alt="" class="avatar">
+        )}
+        <blockquote class="testimonial-text">{testimonial.body}</blockquote>
+        <p class="client-name">{testimonial.data.contact.name}</p>
+        <p class="client-info">{contact.role} at {companyName}</p>
+      </Card>
+    );
+  })}
+</div>
+
+<style>
+  p {
+    margin: 0
+  }
+
+  .testimonials {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .testimonial {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+  }
+
+  .avatar {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+  }
+
+  .testimonial-text {
+    font-style: italic;
+    quotes: "“" "”" "‘" "’";
+  }
+
+  .testimonial-text:before {
+    content: open-quote;
+  }
+
+  .testimonial-text:after {
+    content: close-quote;
+  }
+
+  .client-name {
+    font-weight: bold;
+    margin-top: 15px;
+  }
+
+  .client-info {
+    color: #666;
+    font-size: 0.9em;
+  }
+
+</style>

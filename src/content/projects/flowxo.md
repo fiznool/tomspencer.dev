@@ -3,6 +3,7 @@ title: 'Flow XO'
 summary: 'A web app to build no-code chatbots.'
 startDate: 'April 2014'
 endDate: 'July 2017'
+featured: true
 faction:
   - 'frontend'
   - 'backend'

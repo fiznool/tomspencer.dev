@@ -1,0 +1,74 @@
+---
+import { type CollectionEntry, getCollection } from 'astro:content';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Card from './Card.astro';
+
+type Props = {
+  filter?: "featured"
+  projects: Array<CollectionEntry<'projects'>>
+};
+
+const { filter, projects } = Astro.props;
+
+let projectsToRender = projects;
+if(filter === "featured") {
+  projectsToRender = projects.filter((project) => project.data.featured)
+}
+---
+
+<ul class="grid">
+  {projectsToRender.map(project => {
+    return (
+      <Card as="li">
+        <h3 class="title">{project.data.title}</h3>
+        <p class="description">{project.data.summary}</p>
+        <p class="read-more"><a href={`/projects/${project.slug}`}>Read more →</a></p>
+      </Card>
+    );
+  })}
+</ul>
+
+<style>
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+    padding: 0;
+  }
+
+  @media (min-width: 576px) {
+    .grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  .image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+
+  .title {
+    margin-top: 0;
+    color: #333;
+    font-size: 1.2em;
+  }
+
+  .description {
+    color: #666;
+    font-size: 0.9em;
+    margin-bottom: 0;
+    flex: 1;
+  }
+
+  .read-more {
+    font-size: 0.9em;
+    margin-bottom: 0;
+  }
+
+  .date {
+    color: #999;
+    font-size: 0.8em;
+    margin-bottom: 0;
+  }
+</style>

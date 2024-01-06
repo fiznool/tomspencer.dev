@@ -3,6 +3,7 @@ title: 'xplore'
 summary: 'An app to connect new and existing customers to independent, local businesses.'
 startDate: 'March 2021'
 endDate: 'July 2023'
+featured: true
 faction:
   - 'mobile-app'
 ---

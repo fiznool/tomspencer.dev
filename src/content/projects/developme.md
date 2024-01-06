@@ -8,8 +8,10 @@ faction:
   - 'mobile-app'
 ---
 
-DevelopMe was a 12-week intensive training course, intended to provide an introduction to software development. Students undertook a curriculum comprising HTML, CSS, JavaScript and PHP, and at the end of the 12-week period were invited to interview with local companies for a further 3 month internship.
+The DevelopMe fellowship was a 12-week intensive course that aimed to teach students the basics of web development. A set of industry specialists were chosen as instructors for the course, each of whom took a week to deliver self-authored material based on a particular topic.
 
-As part of the course, I delivered week-long workshops teaching students to build mobile apps, initially using the Ionic Framework (using AngularJS) and later with React Native. The workshops were held in-person at the DevelopMe facility in Bristol, UK.
+I was approached by the founders in 2016 to deliver a week long course on AngularJS. By 2018, a shift in the industry necessitated a change in the curriculum, and I switched to teaching React and React Native. Throughout my time working for DevelopMe I created my own [training material](https://github.com/studiozeffa/react-native-training-course) and delivered it in-person at their training facility in Bristol, UK.
+
+At the end of the week each student supplied anonymous feedback, which was largely positive. These comments gave me a good insight into the course from a student's perspective and allowed me to hone and refine my material accordingly.
 
 Many of the students that graduated from the course continue to pursue their careers in software development in the local area. It's nice to bump into them every now and again, at local meetups or elsewhere!

@@ -3,6 +3,7 @@ title: 'Chalkboard'
 summary: 'An app for local businesses to communicate more effectively with their customers.'
 startDate: 'September 2019'
 endDate: 'February 2023'
+featured: true
 faction:
   - 'backend'
 ---
