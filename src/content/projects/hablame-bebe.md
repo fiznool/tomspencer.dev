@@ -1,10 +1,12 @@
 ---
 title: 'Háblame Bebé'
 summary: "An app to promote a child's bilingual development."
-startDate: 'January 2018'
-endDate: 'February 2018'
-faction:
-  - 'mobile-app'
+keyPoints:
+  - Built this cross-platform mobile app from scratch using React Native.
+  - Developed using a set of wireframes and designs against a detailed functional specification.
+startDate: 2018-01-01
+endDate: 2018-02-28
+faction: 'mobile-app'
 ---
 
 Háblame Bebé is an app that helps promote a child's bilingualism, brain development, and cultural pride. The app supplies the following functionality:

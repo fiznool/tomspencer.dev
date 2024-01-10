@@ -1,11 +1,15 @@
 ---
 title: 'Candide POS'
 summary: 'An app to accept in-person payments using a Stripe card reader.'
-startDate: 'September 2023'
-endDate: 'January 2024'
+keyPoints:
+  - Point of Sale app built using Expo and React Native
+  - Built from supplied designs and content
+  - Connects to dedicated card reader and printer hardware to process transactions
+startDate: 2023-09-01
+endDate: 2024-01-31
 featured: true
-faction:
-  - 'mobile-app'
+cv: true
+faction: 'mobile-app'
 ---
 
 Candide POS is a native mobile app for accepting in-person ticket payments using a Stripe card reader. It also supports printing a receipt using a Star Micronics printer, which detailed the transaction. It was developed to work with Candide's garden admissions system, which allows individual day tickets to be purchased, as well as season-long memberships and guest passes.

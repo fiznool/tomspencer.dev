@@ -1,12 +1,15 @@
 ---
 title: 'Confinus'
 summary: 'A web-based marketplace for food produce vendors and consumers.'
-startDate: 'January 2019'
-endDate: 'April 2023'
+keyPoints:
+  - Web-based SaaS product for the food industry.
+  - Rearchitected the front-end using Stimulus.js, TypeScript and SASS styling.
+  - Implemented a number of front-end components using the new architecture.
+startDate: 2019-01-01
+endDate: 2023-04-30
 clientSite: 'https://www.confinus.com/'
 featured: true
-faction:
-  - 'frontend'
+faction: 'frontend'
 ---
 
 [Confinus](https://www.confinus.com/) is a web-based marketplace for vendors, distributors and buyers in the food industry.

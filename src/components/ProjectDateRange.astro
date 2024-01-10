@@ -1,0 +1,14 @@
+---
+import FormattedDate from './FormattedDate.astro';
+
+type Props = {
+  as: any;
+  startDate: Date;
+  endDate?: Date;
+}
+
+const { startDate, endDate, as: Element = "p" } = Astro.props;
+---
+<Element>
+  <FormattedDate date={startDate} granularity="month" /> - {endDate ? <FormattedDate date={endDate} granularity="month" /> : 'Present'}
+</Element>

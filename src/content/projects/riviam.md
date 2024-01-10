@@ -1,10 +1,13 @@
 ---
 title: 'RIVIAM'
 summary: 'An app for clinicians to track immunisations.'
-startDate: 'June 2019'
+keyPoints:
+  - Consulted on architecture of cross-platform React Native mobile app
+  - Implemented performance improvements to crypographic functions
+  - Undertaking regular maintenance including dependency upgrades
+startDate: 2019-06-01
 featured: true
-faction:
-  - 'mobile-app'
+faction: 'mobile-app'
 ---
 
 The RIVIAM platform is used to track immunisations. It comprises of a consent platform, to gather consent for administering immunisations, and a system to track and analyse the resulting immunisations.

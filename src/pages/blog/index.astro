@@ -1,13 +1,13 @@
 ---
 import {getCollection} from 'astro:content';
 import FormattedDate from '../../components/FormattedDate.astro';
-import BaseLayout from '../../layouts/BaseLayout.astro';
+import MainSiteLayout from '../../layouts/MainSiteLayout.astro';
 import {getBlogParams} from '../../utils/params';
 
 const posts = (await getCollection('blog')).sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
 ---
 
-<BaseLayout>
+<MainSiteLayout>
   <section>
     <ul>
       {
@@ -28,7 +28,7 @@ const posts = (await getCollection('blog')).sort((a, b) => b.data.pubDate.valueO
       }
     </ul>
   </section>
-</BaseLayout>
+</MainSiteLayout>
 
 <style>
   main {

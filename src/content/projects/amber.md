@@ -1,10 +1,11 @@
 ---
 title: 'AMBER Barrier Tracker'
 summary: 'An app to report water-borne barriers and their usefulness.'
-startDate: 'February 2017'
-endDate: 'July 2017'
-faction:
-  - 'mobile-app'
+keyPoints:
+  - Cross-platform mobile app, built from set of supplied designs using the Ionic Framework.
+startDate: 2017-02-01
+endDate: 2017-07-31
+faction: 'mobile-app'
 ---
 
 An app to report the 'usefulness' of river barriers across Europe.

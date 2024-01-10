@@ -1,11 +1,11 @@
 ---
 title: 'DevelopMe Training'
 summary: 'A 12-week training course, introducing software engineering principles to aspiring developers.'
-startDate: 'May 2016'
-endDate: 'March 2019'
-faction:
-  - 'frontend'
-  - 'mobile-app'
+keyPoints:
+  - Developed and taught a week-long curriculum on AngularJS and React Native to coding "bootcamp" students.
+startDate: 2016-05-01
+endDate: 2019-03-31
+faction: 'mobile-app'
 ---
 
 The DevelopMe fellowship was a 12-week intensive course that aimed to teach students the basics of web development. A set of industry specialists were chosen as instructors for the course, each of whom took a week to deliver self-authored material based on a particular topic.

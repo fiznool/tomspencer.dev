@@ -1,0 +1,39 @@
+---
+import type { CollectionEntry } from 'astro:content';
+import factions from '../data/factions.json';
+import ProjectDateRange from './ProjectDateRange.astro';
+
+type Props = CollectionEntry<'projects'>['data'];
+
+const factionsData = {
+  frontend: {
+    displayName: "Front-end"
+  },
+  backend: {
+    displayName: "Back-end"
+  },
+  fullstack: {
+    displayName: "Full-stack"
+  },
+  "mobile-app": {
+    displayName: "Mobile app"
+  }
+} as const;
+
+const { title, startDate, endDate, keyPoints } = Astro.props;
+const faction = factionsData[Astro.props.faction];
+
+---
+
+<>
+  <heading>
+    <h3>{title}</h3>
+    <small>{faction.displayName}</small>
+    <ProjectDateRange as="small" startDate={startDate} endDate={endDate} />
+  </heading>
+  <ul>
+    {keyPoints.map((point) => (
+      <li>{point}</li>
+    ))}
+  </ul>
+</>

@@ -1,0 +1,128 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import CVExperience from '../../components/CVExperience.astro';
+import { skills, technologies } from '../../data/knowledge.json';
+import KnowledgeBadges from '../../components/KnowledgeBadges.astro';
+import CVProject from '../../components/CVProject.astro';
+
+const experiences =
+  (await getCollection('experience'))
+  .sort(
+    (a, b) => b.data.order - a.data.order
+  );
+const projects =
+  (await getCollection('projects'))
+  .filter((project) => project.data.cv)
+  .sort((a, b) =>
+    b.data.startDate.valueOf() - a.data.startDate.valueOf()
+  );
+
+const yearsExperience = new Date().getFullYear() - 2006;
+---
+
+<BaseLayout title="Tom Spencer's CV" description="The CV/Resume of Tom Spencer, a web and mobile application developer from Bristol, UK.">
+  <Fragment slot="body">
+    <main>
+      <article>
+        <header class="header">
+          <div class="avatar">Mugshot</div>
+          <div class="name">
+            <h1>Tom Spencer</h1>
+            <small>Senior Web and Mobile Application Developer</small>
+          </div>
+        </header>
+        <aside class="contact">
+          <p>Address: Bristol, UK</p>
+          <p>Email: hello@tomspencer.dev</p>
+          <p>Web: www.tomspencer.dev</p>
+        </aside>
+        <section class="profile">
+          <p>I'm a senior full-stack developer with {yearsExperience} years experience building web and mobile applications. I've worked for startups and established companies, and have a proven track record of delivering software products to a high specification, ensuring code quality through robust test suites and rigorous code reviews.</p>
+          <p>I've led development teams to successful product launches across the web and mobile platforms, and augmented existing teams to deliver projects on-time and within budget. With over 10 years experience as an independent contractor, I'm adept at onboarding to existing codebases quickly, and am happy working remotely and in-person as required.</p>
+        </section>
+        <section class="projects">
+          <h2>Projects</h2>
+          <p>This is a selection of projects I have recently completed. A full list can be found on my website.</p>
+          {projects.map((project) => (
+            <CVProject {...project.data} />
+          ))}
+        </section>
+        <section class="experience">
+          <h2>Experience</h2>
+          {experiences.map((experience) => (
+            <CVExperience {...experience} />
+          ))}
+        </section>
+        <section class="skills">
+          <h2>Skills</h2>
+          <KnowledgeBadges entries={skills} />
+          <h2>Technologies</h2>
+          <KnowledgeBadges entries={technologies} />
+        </section>
+      </article>
+    </main>
+  </Fragment>
+</BaseLayout>
+
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+  }
+  main {
+    background-color: #fff;
+    padding: 0;
+  }
+  article {
+    background-color: #fff;
+    display: grid;
+    gap: 16px;
+    grid-template-columns: 2fr 1fr;
+    grid-template-areas:
+      'header     contact'
+      'profile    profile'
+      'projects   skills'
+      'experience experience';
+  }
+  p {
+    margin: 0;
+  }
+  p + p {
+    margin-top: 1em;
+  }
+  .header {
+    grid-area: header;
+    display: flex;
+  }
+  .name {
+    flex: 1 1 auto;
+  }
+  .contact {
+    grid-area: contact;
+  }
+  .profile {
+    grid-area: profile;
+  }
+  .projects {
+    grid-area: projects;
+  }
+  .experience {
+    grid-area: experience;
+  }
+  .skills {
+    grid-area: skills;
+  }
+
+  @media screen {
+    main {
+      min-height: 100vh;
+      background-color: #fafafa;
+    }
+    article {
+      max-width: 800px;
+      padding: 10px;
+      margin: 0 auto;
+    }
+  }
+</style>

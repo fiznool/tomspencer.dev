@@ -16,18 +16,30 @@ const blog = defineCollection({
   }),
 });
 
+const experience = defineCollection({
+  schema: z.object({
+    role: z.string(),
+    company: z.object({
+      name: z.string(),
+      url: z.string().optional(),
+    }),
+    startDate: z.date(),
+    endDate: z.date().optional(),
+    order: z.number(),
+  }),
+});
+
 const projects = defineCollection({
   schema: z.object({
     title: z.string(),
     summary: z.string(),
-    startDate: z.string() /*.transform((str) => new Date(str))*/,
-    endDate: z
-      .string()
-      /* .transform((str) => new Date(str)) */
-      .optional(),
+    keyPoints: z.array(z.string()),
+    startDate: z.date(),
+    endDate: z.date().optional(),
     clientSite: z.string().optional(),
     featured: z.boolean().optional(),
-    faction: z.array(z.enum(['frontend', 'backend', 'mobile-app'])),
+    cv: z.boolean().optional(),
+    faction: z.enum(['frontend', 'backend', 'fullstack', 'mobile-app']),
   }),
 });
 
@@ -45,4 +57,4 @@ const testimonials = defineCollection({
   }),
 });
 
-export const collections = { blog, projects, testimonials };
+export const collections = { blog, experience, projects, testimonials };

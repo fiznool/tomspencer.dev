@@ -1,11 +1,15 @@
 ---
 title: 'xplore'
 summary: 'An app to connect new and existing customers to independent, local businesses.'
-startDate: 'March 2021'
-endDate: 'July 2023'
+keyPoints:
+  - Suite of apps to connect local businesses with customers, build using React Native
+  - POS app to connect to dedicated card reader hardware
+  - Upgraded app to modern standards including React hooks and TypeScript
+startDate: 2021-03-01
+endDate: 2023-07-31
 featured: true
-faction:
-  - 'mobile-app'
+cv: true
+faction: 'mobile-app'
 ---
 
 The xplore suite of apps began life as _Pixie_, an app to connect independent businesses with customers. Businesses signed up to the app and created a profile, which was made available to discover and search for within the app. Businesses could also payments via a pre-payment _Pixie Card_ - customers using this card accumulated loyalty points, which could then be spent at any participating business.

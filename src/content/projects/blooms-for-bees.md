@@ -1,10 +1,11 @@
 ---
 title: 'Blooms for Bees'
 summary: 'An app to identify track bee population in the UK.'
-startDate: 'October 2016'
-endDate: 'July 2017'
-faction:
-  - 'mobile-app'
+keyPoints:
+  - Cross-platform mobile app, built from set of supplied designs using the Ionic Framework.
+startDate: 2016-10-01
+endDate: 2017-07-31
+faction: 'mobile-app'
 ---
 
 Blooms for Bees is an app to identify and track bee population in the UK.

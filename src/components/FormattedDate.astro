@@ -1,17 +1,26 @@
 ---
 interface Props {
 	date: Date;
+	granularity?: "day" | "month"
 }
 
-const { date } = Astro.props;
+const optionsByGranularity = {
+	'day': {
+		year: 'numeric',
+		month: 'short',
+		day: 'numeric'
+	},
+	'month': {
+		year: 'numeric',
+		month: 'long'
+	}
+} as const;
+
+const { date, granularity = 'day' } = Astro.props;
 ---
 
 <time datetime={date.toISOString()}>
 	{
-		date.toLocaleDateString('en-us', {
-			year: 'numeric',
-			month: 'short',
-			day: 'numeric',
-		})
+		date.toLocaleDateString('en-us', optionsByGranularity[granularity])
 	}
 </time>

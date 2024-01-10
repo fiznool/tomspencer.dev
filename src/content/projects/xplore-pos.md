@@ -1,10 +1,13 @@
 ---
 title: 'xplore POS'
 summary: 'An app to allow businesses to accept payments with a pre-paid xplore card'
-startDate: 'September 2021'
-endDate: 'July 2023'
-faction:
-  - 'mobile-app'
+keyPoints:
+  - Suite of apps to connect local businesses with customers, build using React Native
+  - POS app to connect to dedicated card reader hardware
+  - Upgraded app to modern standards including React hooks and TypeScript
+startDate: 2021-09-01
+endDate: 2023-07-31
+faction: 'mobile-app'
 ---
 
 The xplore suite of apps began life as _Pixie_, an app to connect independent businesses with customers. One part of the product allowed business to accept payments via a pre-payment _Pixie Card_ - customers using this card accumulated loyalty points, which could then be spent at any participating business.

@@ -1,11 +1,16 @@
 ---
 title: 'Chalkboard'
 summary: 'An app for local businesses to communicate more effectively with their customers.'
-startDate: 'September 2019'
-endDate: 'February 2023'
+keyPoints:
+  - Mobile app to connect independent businesses with customers
+  - Led the backend API development, architecting and building from the ground up
+  - Built using Apollo GraphQL, OpenID Connect, Postgres, Node.js and TypeScript
+  - Set up and maintained a CI/CD pipeline for automatic test running and deployment to Heroku
+startDate: 2019-09-01
+endDate: 2023-02-28
 featured: true
-faction:
-  - 'backend'
+cv: true
+faction: 'backend'
 ---
 
 Chalkboard is an app for local businesses to communicate more effectively with their customers.

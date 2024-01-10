@@ -1,0 +1,39 @@
+{
+  "skills": [
+    "Web Development",
+    "Mobile Development",
+    "Code Quality",
+    "Test-Driven Development",
+    "Continuous Delivery",
+    "Usability Design",
+    "Wireframing",
+    "Written Communication"
+  ],
+  "technologies": [
+    "HTML",
+    "CSS",
+    "JavaScript",
+    "TypeScript",
+    "React",
+    "React Native",
+    "Expo",
+    "Angular",
+    "Vue",
+    "Stimulus",
+    "Redux",
+    "Ionic",
+    "jQuery",
+    "Storybook",
+    "Node.js",
+    "Express.js",
+    "Ruby",
+    "Rails",
+    "PostgreSQL",
+    "MongoDB",
+    "Git",
+    "Heroku",
+    "Netlify",
+    "Fastlane",
+    "iOS & Android toolchains"
+  ]
+}

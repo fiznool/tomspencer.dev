@@ -1,12 +1,16 @@
 ---
 title: 'Flow XO'
 summary: 'A web app to build no-code chatbots.'
-startDate: 'April 2014'
-endDate: 'July 2017'
+keyPoints:
+  - No-code web SaaS for building chatbots and sending data through other systems
+  - Led development through the full stack, building the system from the ground up
+  - Built using the MEAN stack; MongoDB, Express.js, AngularJS, Node.js
+  - Set up an automatic deployment pipeline to run tests and deploy to Heroku
+startDate: 2014-04-01
+endDate: 2017-07-31
 featured: true
-faction:
-  - 'frontend'
-  - 'backend'
+cv: true
+faction: 'fullstack'
 ---
 
 Flow XO began life as the successor to Torpio, as a no-code SaaS tool to connect online services together in 'workflows', similar to IFTTT and Zapier. An MVP was launched, and it quickly became apparent that users wanted to interact with these tools via a chat interface. As a result, the platform pivoted into a system for building chatbots and kicking off workflows with no coding knowledge required.

@@ -1,6 +1,5 @@
 ---
-import { type CollectionEntry, getCollection } from 'astro:content';
-import BaseLayout from '../layouts/BaseLayout.astro';
+import { type CollectionEntry } from 'astro:content';
 import Card from './Card.astro';
 
 type Props = {
@@ -32,7 +31,7 @@ if(filter === "featured") {
   .grid {
     display: grid;
     grid-template-columns: 1fr;
-    grid-gap: 20px;
+    gap: 20px;
     padding: 0;
   }
 
