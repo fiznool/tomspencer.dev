@@ -1,6 +1,6 @@
 ---
 import FormattedDate from '../components/FormattedDate.astro';
-import MainSiteLayout from './MainSiteLayout.astro';
+import BaseLayout from './BaseLayout.astro';
 
 type Props = {
   title: string;
@@ -13,7 +13,7 @@ type Props = {
 const {title, description, pubDate, updatedDate, heroImage} = Astro.props;
 ---
 
-<MainSiteLayout title={title} description={description}>
+<BaseLayout title={title} description={description}>
   <article>
     <div class="hero-image">
       {heroImage && <img width={1020} height={510} src={heroImage} alt="" />}
@@ -38,7 +38,7 @@ const {title, description, pubDate, updatedDate, heroImage} = Astro.props;
       <slot />
     </div>
   </article>
-</MainSiteLayout>
+</BaseLayout>
 
 <style>
   main {

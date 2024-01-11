@@ -1,10 +1,15 @@
 ---
-import MainSiteLayout from "../layouts/MainSiteLayout.astro";
+import BaseLayout from "../layouts/BaseLayout.astro";
 ---
 
-<MainSiteLayout noHeader>
+<BaseLayout noHeader>
   <header>
-    <img src="/images/headshot.jpg" alt="Tom Spencer's Picture" />
+    <img
+      src="/images/mugshot-wide-240x240.jpg"
+      srcset="/images/mugshot-wide-240x240.jpg 1x,
+              /images/mugshot-wide-480x480.jpg 2x,
+              /images/mugshot-wide-720x720.jpg 3x"
+      alt="Tom Spencer's Profile Picture" />
     <h1>Tom Spencer</h1>
   </header>
   <section class="info">
@@ -17,25 +22,26 @@ import MainSiteLayout from "../layouts/MainSiteLayout.astro";
       <li><a href="mailto:hello@tomspencer.dev">Contact</a></li>
     </ul>
   </nav>
-</MainSiteLayout>
+</BaseLayout>
 
 <style is:global>
   main {
     width: 480px;
     text-align: center;
-    padding: 2em 1em;
+    padding: 2em 1em 1.5em;
   }
 </style>
 
 <style>
   header img {
-    width: 200px;
-    height: 200px;
+    width: 240px;
+    height: 240px;
     border-radius: 50%;
   }
   header h1 {
     color: var(--accent-dark);
     font-size: 2em;
+    margin-top: 0.7em;
   }
   section.info {
     margin-top: 20px;
