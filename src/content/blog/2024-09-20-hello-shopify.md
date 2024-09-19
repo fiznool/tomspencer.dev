@@ -15,7 +15,7 @@ It was also the year that I got my first freelancing gig. I met my first client 
 
 I learned a _lot_ in those few months, enough to know that I wanted to do this full-time. So, when the opportunity presented itself in the following year, I grasped it with both hands. 
 
-Since that move a decade ago, I've worked for dozens of clients on a myriad of different projects. Whilst they were all different in nature, there was one common theme - JavaScript, and more latterly TypeScript. I nursed my code theough the pre-ES6 days, rejoicing when the language finally started progressing forward. It's fair to say that I bet the house on JS, and it repaid me many times over.
+Since that move a decade ago, I've worked for dozens of clients on a myriad of different projects. Whilst they were all different in nature, there was one common theme - JavaScript, and more latterly TypeScript. I nursed my code through the pre-ES6 days, rejoicing when the language finally started progressing forward. It's fair to say that I bet the house on JS, and it repaid me many times over.
 
 I rarely struggled to find clients, due to a combination of hard work, exceeding expectations, and networking. 
 
@@ -36,12 +36,12 @@ Enter Shopify. The company has long been on my radar - after spending the summer
 
 As it happens, a good friend and fellow intern on the program did eventually join, and spent 8 years there trying to convince me to apply too (hi, Owain!).
 
-Well, he finally got his wish! When a role became available I jumped at the chance to apply. The hiring peocess is well documented on Shopify's own site, and after a very positive experience I was thrilled to be offered a role as a Staff Engineer.
+Well, he finally got his wish! When a role became available I jumped at the chance to apply. The hiring process is well documented on Shopify's own site, and after a very positive experience I was thrilled to be offered a role as a Staff Engineer.
 
 It was a no-brainer for me, as everyone I met throughout the process were so smart yet incredibly nice. The opportunities for learning and growth appear to be unlimited, and I finally get to scratch the itch for working at a Big Tech company. 
 
 That being said, I'm going to miss the autonomy and flexibility of contracting. I've been blessed with the ability to take time off during big life events, and wouldn't trade that time for anything. But, it feels like the right time to move on to a new and exciting chapter. 
 
-As for my company, Studio Zeffa, it is currently going through the incredibly archaic process of being struck off. It's poignant that it was named after our cat, Zeffa, who passed this year too. I often called her the boss, especially when she was sat on the keyboard. I'll treasure those memories, and the decade of contracting thst went with it, but time marches on and ao must I. 
+As for my company, Studio Zeffa, it is currently going through the incredibly archaic process of being struck off. It's poignant that it was named after our cat, Zeffa, who passed this year too. I often called her the boss, especially when she was sat on the keyboard. I'll treasure those memories, and the decade of contracting that went with it, but time marches on and so must I. 
 
 So hello, Shopify. It's great to meet you, and I can't wait to see what I can do alongside my new world-class colleagues. Let's make it happen!
